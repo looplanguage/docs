@@ -24,8 +24,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
             sidebarPath: require.resolve("./sidebars.js"),
             // Please change this to your repo.
             editUrl: "https://github.com/looplanguage/looplanguage.github.io/edit/main",
-            showLastUpdateAuthor: false,
-            showLastUpdateTime: false,
+            showLastUpdateAuthor: true,
+            showLastUpdateTime: true,
           },
           blog: {
             showReadingTime: true,
