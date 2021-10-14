@@ -22,12 +22,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/looplanguage/looplanguage.github.io/edit',
+          editUrl: 'https://github.com/looplanguage/looplanguage.github.io/edit/main',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/looplanguage/looplanguage.github.io/edit/blog',
+          editUrl: 'https://github.com/looplanguage/looplanguage.github.io/edit/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
