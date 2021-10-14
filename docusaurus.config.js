@@ -106,7 +106,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             title: 'More',
             items: [{
-                label: 'Blog',
+                label: 'Updates',
                 to: '/blog',
               },
               {
