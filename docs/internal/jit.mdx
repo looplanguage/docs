@@ -1,0 +1,47 @@
+---
+title: Just-in-time compiler
+sidebar_position: 100
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::danger
+
+Loop's JIT compiler is in **very** early stages. We advise **not** running your application with JIT-mode enabled (--jit) until it's thoroughly tested by our QA team.
+
+:::
+
+Loop features a JIT-compiler which will on-demand compile functions to native machine code, this boasts massive performance gain. Only functions will be JIT-compiled. Code in the root scope will not be jitted. Once a function is compiled once to native code it will be stored in memory for future use.
+
+## Enabling JIT
+
+To enable JIT in Loop you need to pass a flag to the Loop executable. How this is done depends on your operating system:
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows" default>
+
+```
+loop.exe --jit <filename>.loop
+```
+
+  </TabItem>
+  <TabItem value="mac" label="MacOS">
+
+```
+loop --jit <filename>.loop
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```
+loop --jit <filename>.loop
+```
+
+  </TabItem>
+</Tabs>
+
+You can also use the short-hand flag operator for this: `-j` instead of `--jit`.
+
+An overview of all flags can be found here
