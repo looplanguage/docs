@@ -10,22 +10,27 @@ import "../theme/dracula-prism.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title"> {siteConfig.title} </h1> <p className="hero__subtitle"> {siteConfig.tagline} </p>
-        <img
-          style={{
-            maxWidth: "1100px",
-          }}
-          src="img/code.png"
-        />
-        <div className={styles.buttons}>
-          {" "}
-          <Link className="button button--secondary button--lg" to="/docs/usage/installation">
-            Get Started{" "}
-          </Link>{" "}
-        </div>{" "}
-      </div>{" "}
+    <header style={{ backgroundColor: "#2b3137" }} className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className={styles.hero}>
+        <div className={styles.heroInner}>
+          <h1 className={styles.heroProjectTagline}>
+            <span className={styles.heroTitleTextHtml}>
+              A <b>dynamic</b>, type-safe <b>programming language</b>
+            </span>
+          </h1>
+          <div className={styles.indexCtas}>
+            <Link className="button button--primary" to="/docs">
+              <div>Get Started</div>
+            </Link>
+            <Link className="button button--info" to="https://docusaurus.new">
+              <div>Download</div>
+            </Link>
+            <span className={styles.indexCtasGitHubButtonWrapper}>
+              <iframe className={styles.indexCtasGitHubButton} src="https://ghbtns.com/github-btn.html?user=looplanguage&amp;repo=loop&amp;type=star&amp;count=true&amp;size=large" width={160} height={30} title="GitHub Stars" />
+            </span>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
