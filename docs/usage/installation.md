@@ -16,4 +16,4 @@ Loop is a cross-platform bytecode compiled language. To run a Loop application (
 3. Now you can either run the executable directly or
 4. Add it to your path so you can run `./loop` from everywhere
 
-Now you can get to the next step, [creating your first app](/docs/usage/first-app)
+Now you can get to the next step, [creating your first app](first-app.md)
