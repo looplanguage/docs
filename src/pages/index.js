@@ -19,7 +19,7 @@ function HomepageHeader() {
             </span>
           </h1>
           <div className={styles.indexCtas}>
-            <Link className="button button--primary" to="/docs">
+            <Link className="button button--primary" to="/docs/usage/installation">
               <div>Get Started</div>
             </Link>
             <Link className="button button--info" to="https://docusaurus.new">
