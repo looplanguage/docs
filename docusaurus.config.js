@@ -40,14 +40,14 @@
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         algolia: {
-          apiKey: "YOUR_API_KEY",
-          indexName: "YOUR_INDEX_NAME",
+          apiKey: "eec66f8bd25976fb30cae8cd3918edc0",
+          indexName: "looplang",
 
           // Optional: see doc section below
           contextualSearch: true,
 
           // Optional: see doc section below
-          appId: "YOUR_APP_ID",
+          appId: "BH4D9OD16A",
 
           // Optional: Algolia search parameters
           searchParameters: {},
