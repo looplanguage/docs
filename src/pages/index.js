@@ -22,7 +22,7 @@ function HomepageHeader() {
             <Link className="button button--primary" to="/docs/usage/installation">
               <div>Get Started</div>
             </Link>
-            <Link className="button button--info" to="https://docusaurus.new">
+            <Link className="button button--info" to="https://github.com/looplanguage/loop/releases/latest">
               <div>Download</div>
             </Link>
             <span className={styles.indexCtasGitHubButtonWrapper}>
