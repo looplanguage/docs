@@ -1,5 +1,5 @@
 ---
-title: Return Statement
+title: Returns
 sidebar_position: 100
 ---
 
