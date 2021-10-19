@@ -37,6 +37,21 @@ for (var value in array) {
 
 ## Break
 
-## Goto
+The break keyword will stop the loop and "break" out of the loop. Break also has the functionality to return a value with it.
 
-## Labels
+Examples given below:
+
+```loop
+// Break without returning a value
+for (true) {
+    break
+}
+
+// Break with a value
+for (var i from 1 to 100) {
+    if (i == 10) {
+        // Breaks and return the value of 'i'
+        break i
+    }
+}
+```
