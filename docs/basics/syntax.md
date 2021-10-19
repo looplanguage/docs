@@ -3,13 +3,17 @@ title: Syntax
 sidebar_position: 0
 ---
 
-The basic language syntax of Loop will be explained here. Only the very basics will be explained here. If the feature has more to it a link to the documentation entry will be provided for more detail.
+The basic language syntax of Loop will be explained here. Only the very basics
+will be explained here. If the feature has more to it a link to the
+documentation entry will be provided for more detail.
 
 ## Entry Point
 
-Every Loop program will start with the file provided when invoking the Loop executable.
+Every Loop program will start with the file provided when invoking the Loop
+executable.
 
-For example, this in `example.loop` and invoking it with `./loop example.loop` will print `"Hello World!"`
+For example, this in `example.loop` and invoking it with `./loop example.loop`
+will print `"Hello World!"`
 
 ```loop
 print("Hello World!")
@@ -17,11 +21,13 @@ print("Hello World!")
 
 ## Standard Input & Output
 
-To read from standard input (stdin) and write to standard output (stdout) Loop provides some easy helpers.
+To read from standard input (stdin) and write to standard output (stdout) Loop
+provides some easy helpers.
 
 ### Input
 
-For input you can use the `input` function. For example to accept user input without a prompt:
+For input you can use the `input` function. For example to accept user input
+without a prompt:
 
 ```loop
 // Variable "test" will contain the value of what the user typed in.
@@ -37,7 +43,8 @@ var test = input("Prompt > ")
 
 ### Output
 
-It's extremely simple to output to stdout. There are two built-in functions for this.
+It's extremely simple to output to stdout. There are two built-in functions for
+this.
 
 #### print
 
@@ -66,7 +73,9 @@ println("Hello World!\n")
 
 ## Variables
 
-In Loop every expression can be assigned to a variable for future reference. This includes things like functions and loops. Declaring a variable is simple and concise.
+In Loop every expression can be assigned to a variable for future reference.
+This includes things like functions and loops. Declaring a variable is simple
+and concise.
 
 The most basic feature is assigning an integer to a variable.
 
@@ -74,7 +83,9 @@ The most basic feature is assigning an integer to a variable.
 var x = 100;
 ```
 
-It's also possible to assign functions and then call it. Calling a function requires parenthesis. Without them, it will result in the function reference being returned.
+It's also possible to assign functions and then call it. Calling a function
+requires parenthesis. Without them, it will result in the function reference
+being returned.
 
 ```loop
 // Defines a new function named "func"
@@ -88,7 +99,9 @@ func()
 
 ## Functions
 
-A function is a a simple way to bundle common instructions that might need an alternate input. Defining a function is a simple, for example to create a function that doubles it's input:
+A function is a a simple way to bundle common instructions that might need an
+alternate input. Defining a function is a simple, for example to create a
+function that doubles it's input:
 
 ```loop
 // Defines a new function called double with one parameter named "x"
