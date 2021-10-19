@@ -1,5 +1,5 @@
 ---
-title: Conditional Expression
+title: Conditionals
 sidebar_position: 0
 ---
 

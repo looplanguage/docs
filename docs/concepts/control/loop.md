@@ -1,5 +1,5 @@
 ---
-title: Loop Expression
+title: Loops
 sidebar_position: 300
 ---
 
