@@ -5,7 +5,8 @@ sidebar_position: 200
 
 ## Conditional Expression
 
-Allows for conditional execution of code. Either one condition or multiple can be used, example:
+Allows for conditional execution of code. Either one condition or multiple can
+be used, example:
 
 ```loop
 if ( expression ) {
@@ -50,7 +51,8 @@ var double = fun(x) {
 }
 ```
 
-A return statement will only return the nearest block. Meaning that the following will not return it's outer function:
+A return statement will only return the nearest block. Meaning that the
+following will not return it's outer function:
 
 ```loop
 var outer = fun(x) {
@@ -60,7 +62,8 @@ var outer = fun(x) {
 }
 ```
 
-There is one exception to this rule, which is if it's used in a loop. For example, this will return the outer block (and stop the loop):
+There is one exception to this rule, which is if it's used in a loop. For
+example, this will return the outer block (and stop the loop):
 
 ```loop
 var fn = fun() {
@@ -72,16 +75,17 @@ var fn = fun() {
 
 ## For Loop
 
-The For-loop allows to repeat the code written in its block, to be repeated until the condition evaluates to: "true" or "truthy".
+The For-loop allows to repeat the code written in its block, to be repeated
+until the condition evaluates to: "true" or "truthy".
 
 ```loop
 // This will loop forever, because it will always evaluate to "true"
-for (true) { 
+for (true) {
     // Code
 }
 
 // This will loop forever, because "hello" is "truthy"
-for ("hello") { 
+for ("hello") {
     // Code
 }
 ```
@@ -90,24 +94,19 @@ You can also do something like this:
 
 ```loop
 // This will loop from 1 (including) to 100 (excluding)
-for (var n from 1 to 100) { 
+for (var n from 1 to 100) {
     // Code
 }
 
 // Loop through the array
 var array = [1, 4, 10]
-for (var value in array) { 
+for (var value in array) {
     // Code
 }
 ```
 
 ## Break
 
-
-
 ## Goto
 
-
-
 ## Labels
-
