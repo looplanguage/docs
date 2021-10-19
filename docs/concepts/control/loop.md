@@ -37,7 +37,8 @@ for (var value in array) {
 
 ## Break
 
-The break keyword will stop the loop and "break" out of the loop. Break also has the functionality to return a value with it.
+The break keyword will stop the loop and "break" out of the loop. Break also has
+the functionality to return a value with it.
 
 Examples given below:
 
