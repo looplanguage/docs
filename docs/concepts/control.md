@@ -100,3 +100,14 @@ for (var value in array) {
     // Code
 }
 ```
+
+## Break
+
+
+
+## Goto
+
+
+
+## Labels
+
