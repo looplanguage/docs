@@ -15,23 +15,6 @@ For example, this in `example.loop` and invoking it with `./loop example.loop` w
 print("Hello World!")
 ```
 
-## Functions
-
-A function is a a simple way to bundle common instructions that might need an alternate input. Defining a function is a simple, for example to create a function that doubles it's input:
-
-```loop
-// Defines a new function called double with one parameter named "x"
-var double = fn(x) {
-  // Returns the input "x" multiplied by 2
-  return x * 2
-}
-
-// Evaluates to 200
-double(100)
-```
-
-[More about Functions](../concepts/types/functions.md)
-
 ## Standard Input & Output
 
 To read from standard input (stdin) and write to standard output (stdout) Loop provides some easy helpers.
@@ -80,3 +63,42 @@ println("Hello World!")
 // Implicit & Explicit new line (results in two new lines)
 println("Hello World!\n")
 ```
+
+## Variables
+
+In Loop every expression can be assigned to a variable for future reference. This includes things like functions and loops. Declaring a variable is simple and concise.
+
+The most basic feature is assigning an integer to a variable.
+
+```loop
+var x = 100;
+```
+
+It's also possible to assign functions and then call it. Calling a function requires parenthesis. Without them, it will result in the function reference being returned.
+
+```loop
+// Defines a new function named "func"
+var func = fn() {}
+
+// Calls the function "func", notice the parenthesis
+func()
+```
+
+[More about Variables](../concepts/variables.md)
+
+## Functions
+
+A function is a a simple way to bundle common instructions that might need an alternate input. Defining a function is a simple, for example to create a function that doubles it's input:
+
+```loop
+// Defines a new function called double with one parameter named "x"
+var double = fn(x) {
+  // Returns the input "x" multiplied by 2
+  return x * 2
+}
+
+// Evaluates to 200
+double(100)
+```
+
+[More about Functions](../concepts/types/functions.md)
