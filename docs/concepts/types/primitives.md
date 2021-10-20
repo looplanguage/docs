@@ -32,6 +32,28 @@ var string = "hello"; // A single word
 var string = "hello world"; // Multiple words
 ```
 
+## Null
+
+Loop only has one primitive indicating the absence of a value. Which is "null", a Null value indicates "not a value". You can define something to be null like this:
+
+```loop
+var has_nothing = null;
+```
+
+The Null primitive will result in "false", for example.
+
+```loop
+var has_nothing = null;
+
+if (has_nothing) {
+  // Will not print
+  print("Hi!")
+} else {
+  // This will print
+  print("Bye!")
+}
+```
+
 ## Arrays
 
 An array is a list of values. They can either be of the same type, or multiple types. The elements themselves can be of any type. An array with only single types can look like this:
