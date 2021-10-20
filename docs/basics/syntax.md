@@ -3,6 +3,12 @@ title: Syntax
 sidebar_position: 0
 ---
 
+:::caution
+
+Not all features mentioned here are implemented
+
+:::
+
 The basic language syntax of Loop will be explained here. Only the very basics
 will be explained here. If the feature has more to it a link to the
 documentation entry will be provided for more detail.

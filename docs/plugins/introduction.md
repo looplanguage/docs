@@ -3,6 +3,12 @@ title: Introduction
 sidebar_position: 0
 ---
 
+:::caution
+
+Not all features mentioned here are implemented
+
+:::
+
 A Plugin in Loop will be able to modify existing behavior of the language or
 extend it with new behavior.
 

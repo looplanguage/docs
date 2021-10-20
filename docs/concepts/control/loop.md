@@ -3,6 +3,12 @@ title: Loops
 sidebar_position: 300
 ---
 
+:::caution
+
+Not all features mentioned here are implemented
+
+:::
+
 ## For Loop
 
 The For-loop allows to repeat the code written in its block, to be repeated

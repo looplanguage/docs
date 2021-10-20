@@ -3,6 +3,12 @@ title: Attributes
 sidebar_position: 400
 ---
 
+:::caution
+
+Not all features mentioned here are implemented
+
+:::
+
 In Loop you can give segments of code an attribute to their change default
 behavior.
 

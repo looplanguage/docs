@@ -3,6 +3,12 @@ title: Labels
 sidebar_position: 300
 ---
 
+:::caution
+
+Not all features mentioned here are implemented
+
+:::
+
 ## Labels
 
 A label in Loop is like: `<identifier>:`, it serves as a "jump point".
