@@ -24,7 +24,7 @@ var double = fn(number) {
     return number * number
 }
 
-@Test("unit")
+@Test()
 var doubleTest = func(){
     var result = double(2)
     assert result equals 2
