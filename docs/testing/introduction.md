@@ -9,5 +9,12 @@ Testing in software development is done to validate if a product does what it is
 
 ## Unit vs Integration tests.
 
-Unit-testing is a way to test the smallest "unit" (Hence the name) of code. It is used to check if a small snippet of code does the right thing with a centain input.
-Another type of testing that you see alot is: "Integration-testing". Integration tests check the whole system, to check if it system does what the user expects its to do.
+### Unit testing
+
+Unit-testing is a way to test the smallest "unit" (Hence the name) of code. 
+It is used to check if a small snippet of code does the right thing with a certain input.
+
+### Integration Testing
+
+Another type of testing that you see a lot is: "Integration-testing". 
+Integration tests check the whole system, to check if the system does what the user expects it to do.
