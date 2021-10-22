@@ -9,7 +9,7 @@ Go to introduction to see information about [Unit-testing](introduction)
 
 :::
 
-#Unit Testing
+# Unit Testing
 
 The example listed below show all the different functions to make a test pass or fail.
 
@@ -21,7 +21,7 @@ might help to debug your failed code test.
 
 ## Assert
 
-"assert" checks if the variable is "true". You will need this function if you I.E. want to check
+The function "assert" checks if the given argument is "true". You will need this function if you I.E. want to check
 if one number is greater than another.
 
 ```loop
@@ -34,7 +34,7 @@ Checks if the two given value's are the same. You could use it to check if "x" e
 or check if "z" is of type: string. When these two values are the same, the test passes.
 
 ```loop
-assert_equals(4, 4, errorMessage) "errorMessage" is optional
+assert_equals(4, 4, errorMessage) // "errorMessage" is optional
 ```
 
 ## Assert Exception
@@ -43,7 +43,7 @@ The "assert_exception" function checks if the functions that you called returns 
 You might need this to check if your error handling works as intended.
 
 ```loop
-assert_exception(error, errorMessage) "errorMessage" is optional
+assert_exception(error, errorMessage) // "errorMessage" is optional
 ```
 
 ## Example
@@ -61,7 +61,7 @@ var doubleTest = fn() {
     var result = double(2)
     var excepted = 4
     var errorMessage = "Error -> expected: {expected}, got: {result}"
-    assert_equals(result, excepted, errorMessage)
+    assert_equals(result, excepted, errorMessage) // This will work!
 }
 ```
 
@@ -80,6 +80,6 @@ var doubleTest = fn() {
     var result = double(2) // Which returns the integer of 4                                       
     var excepted = 4
     var errorMessage = "Error -> expected: {expected}, got: {result}"
-    assert_equals(result, excepted, errorMessage)
+    assert_equals(result, excepted, errorMessage) // This will work!
 }
 ```
