@@ -7,7 +7,7 @@ sidebar_position: 0
 
 Testing in software development is done to validate if a product does what it is supposed to do. With that validation you can provide the nescecary information to the stakeholders.
 
-## Unit vs Integration tests.
+## Unit vs Integration tests
 
 ### Unit testing
 
