@@ -1,6 +1,6 @@
 ---
 title: Functions
-sidebar_position: 100
+sidebar_position: 200
 ---
 
 ## Simple Function Declaration

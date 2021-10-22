@@ -1,9 +1,13 @@
 ---
 title: Primitives
-sidebar_position: 0
+sidebar_position: 100
 ---
 
-## Numbers
+# Primitives
+
+## Types
+
+Listed below are all the different types that Loop has out of the box. All the types have an explanations and some examples.
 
 ### Integer
 
