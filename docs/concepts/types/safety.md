@@ -1,5 +1,5 @@
 ---
-title: Safety
+title: Type-Safety
 sidebar_position: 0
 ---
 
