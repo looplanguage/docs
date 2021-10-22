@@ -1,6 +1,6 @@
 ---
 title: Primitives
-sidebar_position: 0
+sidebar_position: 100
 ---
 
 ## Numbers
