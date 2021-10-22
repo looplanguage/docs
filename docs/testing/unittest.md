@@ -67,7 +67,7 @@ var doubleTest = fn() {
 
 Lets take a look at the test: "doubleTest". There are four lines, we go line by line. The first line calls the function
 that we want to test, and it stores its return value in a variable called: "result". The next line is very simple
-it is a [variable declaration](../variables), where "excepted" gets assigned the value of "4". On the next line you see
+it is a [variable declaration](../concepts/variables), where "excepted" gets assigned the value of "4". On the next line you see
 a variable called: "errorMessage", this is user-created message that gets printed in the terminal when the test does not pass.
 At the end, we see the actual test. It takes three arguments; the result; what is expected; and the optional error message.
 
