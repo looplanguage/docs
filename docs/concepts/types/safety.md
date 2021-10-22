@@ -12,7 +12,7 @@ different type to the [variable](../variables). Type safety in a language is imp
 ```loop
 // Variable declaration
 var int = 100
-int = 200 // This will work!
+int = 200
 ```
 
 A variable called "int" is declared with the value: 100, the value: 100 is of type "Integer". 
@@ -21,7 +21,7 @@ The row below the variable "Int" gets assigned the value of 200.
 ```loop
 // Variable declaration
 var int = 100
-int = "Hello" // This will NOT work! Different types
+int = "Hello"
 ```
 
 Again a variable is declared with the value: 100, which we just learned is an "Integer". The row below "int" gets assigned
