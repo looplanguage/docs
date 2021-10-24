@@ -128,6 +128,10 @@
                   label: "Privacy",
                   to: "/privacy",
                 },
+                {
+                  label: "This site is powered by Netlify",
+                  href: "https://www.netlify.com/",
+                },
               ],
             },
           ],
