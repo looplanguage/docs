@@ -98,6 +98,10 @@
                   label: "Twitter",
                   href: "https://twitter.com/kanersps",
                 },
+                {
+                  label: "Contributor Guidelines",
+                  to: "/contributor_guidelines"
+                }
               ],
             },
             {
