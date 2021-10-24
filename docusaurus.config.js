@@ -98,6 +98,10 @@
                   label: "Twitter",
                   href: "https://twitter.com/kanersps",
                 },
+                {
+                  label: "Contributor Guidelines",
+                  to: "/contributor_guidelines"
+                }
               ],
             },
             {
@@ -110,6 +114,19 @@
                 {
                   label: "GitHub",
                   href: "https://github.com/looplanguage",
+                },
+              ],
+            },
+            {
+              title: "Legal",
+              items: [
+                {
+                  label: "Code of Conduct",
+                  to: "/conduct",
+                },
+                {
+                  label: "Privacy",
+                  to: "/privacy",
                 },
               ],
             },
