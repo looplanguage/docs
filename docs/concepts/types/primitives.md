@@ -3,7 +3,11 @@ title: Primitives
 sidebar_position: 100
 ---
 
-## Numbers
+# Primitives
+
+## Types
+
+Listed below are all the different types that Loop has out of the box. All the types have an explanations and some examples.
 
 ### Integer
 
@@ -30,6 +34,28 @@ A string is a sequence of characters inside `"`'s. You can define a string like 
 ```loop
 var string = "hello"; // A single word
 var string = "hello world"; // Multiple words
+```
+
+## Null
+
+Loop only has one primitive indicating the absence of a value. Which is "null", a Null value indicates "not a value". You can define something to be null like this:
+
+```loop
+var has_nothing = null;
+```
+
+The Null primitive will result in "false", for example.
+
+```loop
+var has_nothing = null;
+
+if (has_nothing) {
+  // Will not print
+  print("Hi!")
+} else {
+  // This will print
+  print("Bye!")
+}
 ```
 
 ## Arrays

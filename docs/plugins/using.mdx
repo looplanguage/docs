@@ -1,0 +1,39 @@
+---
+title: Using a Plugin
+sidebar_position: 200
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+Using a Plugin within Loop is similiar to using Packages. The same syntax can be used to import Plugins.
+
+## Importing Plugins
+
+It's simple to start using Plugins, once you have downloaded a DLL from the internet (we advise using the package repository) you can easily import it like this.
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows" default>
+
+```loop
+import "C:/path/to/plugin.dll" as new_plugin
+```
+
+  </TabItem>
+  <TabItem value="mac" label="MacOS">
+
+```loop
+import "/path/to/plugin.dll" as new_plugin
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```loop
+import "/path/to/plugin.dll" as new_plugin
+```
+
+  </TabItem>
+</Tabs>
+
+Now you will be able to use the new plugin using `new_plugin`.
