@@ -113,6 +113,19 @@
                 },
               ],
             },
+            {
+              title: "Legal",
+              items: [
+                {
+                  label: "Code of Conduct",
+                  to: "/conduct",
+                },
+                {
+                  label: "Privacy",
+                  to: "/privacy",
+                },
+              ],
+            },
           ],
           copyright: `Copyright © ${new Date().getFullYear()} Loop Language`,
         },
