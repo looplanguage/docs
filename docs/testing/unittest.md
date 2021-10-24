@@ -1,5 +1,5 @@
 ---
-title: Unit-testing
+title: Unit Testing
 sidebar_position: 100
 ---
 
@@ -8,8 +8,6 @@ sidebar_position: 100
 Go to introduction to see information about [Unit-testing](introduction)
 
 :::
-
-# Unit Testing
 
 The example listed below show all the different functions to make a test pass or fail.
 

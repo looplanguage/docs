@@ -1,9 +1,7 @@
 ---
-title: Type-Safety
+title: Type Safety
 sidebar_position: 0
 ---
-
-# Safety
 
 A type specifies a collection of values that have similar traits. 
 Type safety makes sure that, when you have a variable of a specific type, you cannot assign a different value of a 
