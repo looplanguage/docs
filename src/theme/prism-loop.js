@@ -61,8 +61,8 @@
         }
       }
     ],
+    "keyword": /\b(?:var|return|if|else|import|as|export|enum|struct|fn|for|from|to|in)\b/,
     "builtin": /\b(print|println)\b/,
-    "function": /\b(?:fn)\b/,
     "boolean": /\b(?:false|true)\b/,
     "function": /\b\w+(?=\()/,
     "number": /\b0x[\da-f]+\b|(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[+-]?\d+)?/i,
@@ -72,7 +72,6 @@
       pattern: re(/(\b<<0>>\s+)<<1>>/.source, [typeDeclarationKeywords, genericName]),
 			lookbehind: true,
     },
-    "keyword": /\b(?:var|return|if|else|import|as|export|enum|struct)\b/,
     "constant": [
       {
         pattern: /\b(?:String|Integer|Float|Boolean)\b/,
