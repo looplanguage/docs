@@ -3,7 +3,7 @@ title: Enum
 sidebar_position: 300
 ---
 
-An enum is a set of named values. An enum can be assigned any expression and thus allows for a lot of power. An enum (by default) uses auto incremented integers as values. Enums are a constant data structure and can not be assigned to. Enums are scoped, see [scoping](../scoping.md) for more information.
+An enum is a set of named values. An enum can be assigned any expression and thus allows for a lot of power. An enum (by default) uses auto incremented integers as values. Enums are a constant data structure and can not be assigned to. Enums are scoped, see [scoping](./scoping.md) for more information.
 
 ## Basics
 
