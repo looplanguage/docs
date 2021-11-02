@@ -235,9 +235,8 @@ pre[class*="language-"] {
 .token.boolean {
   color: var(--green) !important;
 }
-.token.builtin,
 .token.class-name {
-  color: var(--cyan);
+  color: var(--cyan) !important;
 }
 .token.comment {
   color: var(--comment);
@@ -268,11 +267,9 @@ pre[class*="language-"] {
   color: var(--pink);
 }
 .token.function {
-  color: var(--green);
+  color: var(--green) !important;
 }
-.language-css .token.function {
-  color: var(--cyan);
-}
+
 .token.important,
 .token.keyword {
   color: var(--pink);
@@ -331,6 +328,9 @@ pre[class*="language-"] {
 }
 .token.operator {
   color: rgba(139, 233, 253, 1);
+}
+.token.builtin {
+  color: var(--yellow) !important;
 }
 .token.char {
   color: rgba(255, 135, 157, 1);
