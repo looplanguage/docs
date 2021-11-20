@@ -86,8 +86,12 @@
               title: "Docs",
               items: [
                 {
-                  label: "Introduction",
-                  to: "/docs/intro",
+                  label: "Installation",
+                  to: "/docs/usage/installation",
+                },
+                {
+                  label: "First App",
+                  to: "/docs/usage/first-app",
                 },
               ],
             },
@@ -99,9 +103,13 @@
                   href: "https://twitter.com/kanersps",
                 },
                 {
-                  label: "Contributor Guidelines",
-                  to: "/contributor_guidelines"
-                }
+                  label: "GitHub",
+                  href: "https://github.com/looplanguage",
+                },
+                {
+                  label: "Discord",
+                  href: "https://discord.gg/Q8uwtTMD",
+                },
               ],
             },
             {
@@ -112,8 +120,12 @@
                   to: "/blog",
                 },
                 {
-                  label: "GitHub",
-                  href: "https://github.com/looplanguage",
+                  label: "Contributor Guidelines",
+                  to: "/contributor_guidelines"
+                },
+                {
+                  label: "Development Guidelines",
+                  href: "https://github.com/looplanguage/.github/issues/1"
                 },
               ],
             },
