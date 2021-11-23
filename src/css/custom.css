@@ -4,10 +4,13 @@
  * work well for content-centric websites.
  */
 
+ /* Google Font - Montserrat */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary: #3B3FF5;
+  --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
   --ifm-color-primary-light: rgb(70, 203, 174);
@@ -16,15 +19,434 @@
   --ifm-code-font-size: 95%;
   --ifm-global-shadow-lw: none;
   --ifm-hero-background-color: #20232a;
+  /* --ifm-background-color: #000; */
+  --purest-black-color: #000; 
+}
+
+* { 
+  font-family: Montserrat, sans-serif;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #000000;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+html[data-theme="light"] .docusaurus-highlight-code-line {
+  background-color: #fff !important;
 }
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: #000 !important;
+}
+
+/* Mobile Menu */
+#resHide { 
+  display: none; 
+}
+
+#mobMenu {
+  display: none; 
+}
+
+.darkMode li {
+  color: white !important;
+}
+
+.darkMode a {
+  color: white !important; 
+}
+
+
+/* Top Navigation */
+#topNav { 
+  max-height: 50px; 
+  background-color: var(--ifm-color-primary);
+  display: flex; 
+}
+
+
+#textDayNight { 
+  font-size: 17px; 
+  color: white; 
+  margin-bottom: 0px !important; 
+}
+/* End Top Navigation */
+
+.logoSize {
+  max-height: 33px; 
+  vertical-align: middle; 
+} 
+
+/* content: url("image2.png"); - to replace img in dark mode */
+
+#navItemsLeft { 
+  padding: 1.4em 1.5em 0em 2.3em; 
+  display: flex; 
+  align-items: flex-start;
+  float: left; 
+}
+
+.navItemsRight { 
+  padding: 1.4em 4em 1.4em 0em; 
+}
+
+.navItemsRight, img { 
+  padding-left: 1.4em; 
+}
+
+.darkMode, #navItemsLeft .navItem { 
+  color: white; 
+}
+
+/* Nav Links */
+#navHeader { 
+  font-weight: 600;
+  max-width: 80px !important;  
+  color: #000; 
+  list-style: none;
+  display: inline-block; 
+  text-align: center;
+  font-size: 21px; 
+}
+
+#lightMode, #navItemsLeft .navItem { 
+  color: #000; 
+  list-style: none;
+  display: inline-block; 
+  min-width: 115px; 
+  text-align: center;
+  font-size: 24px; 
+}
+
+/* End Nav Links */
+
+.loopLogo { 
+  margin: 0.2em 0.8em;
+}
+
+#navItemsLeft a img { 
+  max-width: 80px; 
+}
+
+#navItemsLeft a:hover { 
+  font-weight: 600; 
+  text-decoration: none;
+}
+
+/* remove blue outline focus */
+.navbar__search-input:focus { 
+  outline: 0; 
+}
+
+/* Button Night/Day */
+
+.knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.LNSwitch
+{
+    position: relative;
+    top: 50%;
+    width: 64px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 1em; 
+}
+
+.LNSwitch.r, .LNSwitch.r .layer
+{
+    border-radius: 100px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: #F2F2F2;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 1 */
+#LNSwitch-1 .knobs:before
+{
+    content: '\2600';
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #191D25;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.6;
+    padding: 7px 4px;
+    background-color: #FFF;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#LNSwitch-1 .checkbox:checked + .knobs:before
+{
+    content: '\263D';
+    left: 33px;
+    color: #fff; 
+    background-color: #000;
+}
+
+#LNSwitch-1 .checkbox:checked ~ .layer
+{
+    background-color: #292929;
+}
+
+#LNSwitch-1 .knobs, #LNSwitch-1 .knobs:before, #LNSwitch-1 .layer
+{
+    transition: 0.3s ease all;
+}
+
+
+
+/* Media Queries */
+/* Between laptop and Tablet */
+@media only screen and (min-width: 783px) and (max-width: 1000px) { 
+  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
+    padding-right: 7em; 
+  }
+
+  #navItemsLeft {
+    padding: 1.4em 1.5em 1.4em 0.3em; 
+  }
+
+    /* Top Navigation */
+    #textDayNight { 
+      font-size: 17px; 
+    }
+    
+    #lnSwitch { 
+      font-size: 17px; 
+    }
+    /* End Top Navigation */
+
+    #navHeader { 
+      font-size: 17px; 
+    }
+  
+    #lightMode, #navItemsLeft .navItem { 
+      font-size: 17px; 
+      min-width: 90px; 
+    }
+
+    .loopLogo { 
+      max-height: 23px;  
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 668px) and (max-width: 782px) { 
+
+  /* Top Navigation */
+  #textDayNight { 
+    font-size: 17px; 
+  }
+  
+  #lnSwitch { 
+    font-size: 17px; 
+  }
+  /* End Top Navigation */
+
+  .logoSize {
+    max-height: 30px; 
+    vertical-align: middle; 
+  } 
+
+  #navItemsLeft { 
+    padding: 1.4em 0em 1.4em 0; 
+    display: flex; 
+    align-items: flex-start;
+    float: left; 
+  }
+  
+  .navItemsRight { 
+    padding: 1.4em 4em 1.4em 0em; 
+  }
+  
+  #navHeader { 
+    font-size: 17px; 
+  }
+
+  #lightMode, #navItemsLeft .navItem { 
+    font-size: 17px; 
+    min-width: 80px; 
+  }
+
+  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
+    padding-right: 6em; 
+  }
+
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 250px) and (max-width: 667px) { 
+  .resMob { 
+    display: none !important; 
+  }
+
+  #resHide { 
+    display: flex; 
+    height: 60px; 
+    max-width: 100px; 
+  }
+
+  #mobMenu { 
+    display: flex; 
+  }
+
+  #menu, .loopLogo { 
+    min-width: 100px; 
+  }
+
+  .loopLogo { 
+    margin: 0.8em 0.5em; 
+    padding-top: 0.25em; 
+  }
+
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--ifm-color-primary);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    list-style-type: none;
+    min-width: 100vw;
+    height: 92vh;
+    margin: -25px 0 0 -25px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  .darkMode #menu { 
+    background-color: var(--purest-black-color); 
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+  #menu a:hover {
+    text-decoration: none; 
+    font-weight: 600; 
+  }
+
+  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
+    margin-top: 0.6em; 
+  }
+
+  .githubLogo {
+    padding-left: 0em; 
+  }
+
+ }

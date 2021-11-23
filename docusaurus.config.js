@@ -54,11 +54,29 @@
 
           //... other Algolia params
         },
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: false,
+          respectPrefersColorScheme: false,
+          switchConfig: {
+            darkIcon: '🌙',
+            darkIconStyle: {
+              marginLeft: '2px',
+            },
+            // Unicode icons such as '\u2600' will work
+            // Unicode with 5 chars require brackets: '\u{1F602}'
+            lightIcon: '\u{1F602}',
+            lightIconStyle: {
+              marginLeft: '1px',
+            },
+          },
+        },
         navbar: {
           title: "Loop",
           logo: {
             alt: "Loop Logo",
             src: "img/logo.png",
+            srcDark: "img/logoWit.png",
           },
           items: [
             {
@@ -66,6 +84,10 @@
               docId: "intro",
               position: "left",
               label: "Docs",
+            },
+            {
+              type: 'search',
+              position: 'right',
             },
             {
               to: "/blog",
