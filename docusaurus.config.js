@@ -11,7 +11,6 @@
     favicon: "img/favicon.ico",
     organizationName: "looplanguage", // Usually your GitHub org/user name.
     projectName: "looplanguage.github.io", // Usually your repo name.
-    plugins: ["@docusaurus/plugin-google-gtag"],
     presets: [
       [
         "@docusaurus/preset-classic",
