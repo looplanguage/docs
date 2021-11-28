@@ -11,7 +11,6 @@
     favicon: "img/favicon.ico",
     organizationName: "looplanguage", // Usually your GitHub org/user name.
     projectName: "looplanguage.github.io", // Usually your repo name.
-
     presets: [
       [
         "@docusaurus/preset-classic",
@@ -100,8 +99,8 @@
                 },
                 {
                   label: "Contributor Guidelines",
-                  to: "/contributor_guidelines"
-                }
+                  to: "/contributor_guidelines",
+                },
               ],
             },
             {
@@ -139,6 +138,12 @@
         },
         prism: {
           theme: undefined,
+        },
+        gtag: {
+          // You can also use your "G-" Measurement ID here.
+          trackingID: "G-B8LRCBXDX3",
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
         },
       }),
   }
