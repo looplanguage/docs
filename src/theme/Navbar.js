@@ -12,10 +12,12 @@ function Navbar(){
             darkModeCSS.classList.remove("darkMode");  
             setLightTheme();
             document.getElementsByClassName('loopLogo')[0].src="../../static/img/logoLightMode.svg"; 
+            document.getElementById('mobLogo').src="../../static/img/logoLightMode.svg";
             document.getElementsByClassName('githubLogo')[0].src="../../static/img/Github.png"; 
         } else {
             setDarkTheme();
             document.getElementsByClassName('loopLogo')[0].src="../../static/img/logoDarkMode.svg"; 
+            document.getElementById('mobLogo').src="../../static/img/logoDarkMode.svg";
             document.getElementsByClassName('githubLogo')[0].src="../../static/img/GithubWhite.png"; 
             darkModeCSS.classList.add("darkMode");
         }
@@ -36,10 +38,10 @@ return <nav id="lightMode">
     </div>
     {/* Left Navbar */}
     <ul id="navItemsLeft" class="navbar__items--left resMob">
-    <img class="navItem" class="loopLogo logoSize" src="../../static/img/logoLightMode.svg"/>
-        <a class="navItem" href="#"><li>Docs</li></a>
-        <a class="navItem" href="#"><li>Updates</li></a>
-        <a class="navItem" href="#"><li>About</li></a>
+    <img class="loopLogo logoSize" src="../../static/img/logoLightMode.svg"/>
+        <a class="navItem" href="https://looplang.org/docs/intro"><li>Docs</li></a>
+        <a class="navItem" href="https://looplang.org/blog"><li>Updates</li></a>
+        {/* <a class="navItem" href="#"><li>About</li></a> */}
     </ul>
 
     {/* Right Navbar */}
@@ -59,14 +61,14 @@ return <nav id="lightMode">
                 <span></span>
                 <span></span>
             <ul id="menu">
-            <a class="navItem" href="#"><li>Docs</li></a>
-            <a class="navItem" href="#"><li>Updates</li></a>
-            <a class="navItem" href="#"><li>About</li></a>
+            <a class="navItem" href="https://looplang.org/docs/intro"><li>Docs</li></a>
+            <a class="navItem" href="https://looplang.org/blog"><li>Updates</li></a>
+            {/* <a class="navItem" href="#"><li>About</li></a> */}
         <a class="navItem" href="https://github.com/looplanguage"><li><img src="../../static/img/Github.png" class="githubLogo logoSize"/></li></a>  
             </ul>
            </div>
            <div id="mobMenu">
-    <img id="mobLogo" class="navItem" class="loopLogo logoSize" src="../../static/img/logoLightMode.svg"/>
+    <img id="mobLogo" class="navItem loopLogo logoSize" src="../../static/img/logoLightMode.svg"/>
     <SearchBar id="searchBar"/>
     </div>
     </nav>

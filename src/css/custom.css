@@ -62,35 +62,35 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
 /* Top Navigation */
 #topNav { 
-  max-height: 50px; 
+  max-height: 35px; 
   background-color: var(--ifm-color-primary);
   display: flex; 
 }
 
 
 #textDayNight { 
-  font-size: 17px; 
+  font-size: 13px; 
   color: white; 
   margin-bottom: 0px !important; 
 }
 /* End Top Navigation */
 
 .logoSize {
-  max-height: 33px; 
+  max-height: 25px; 
   vertical-align: middle; 
 } 
 
 /* content: url("image2.png"); - to replace img in dark mode */
 
 #navItemsLeft { 
-  padding: 1.4em 1.5em 0em 2.3em; 
+  padding: 0.7em 1.5em 0em 2.3em; 
   display: flex; 
   align-items: flex-start;
   float: left; 
 }
 
 .navItemsRight { 
-  padding: 1.4em 4em 1.4em 0em; 
+  padding: 0.7em 4em 0.7em 0em; 
 }
 
 .navItemsRight, img { 
@@ -102,23 +102,15 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 /* Nav Links */
-#navHeader { 
-  font-weight: 600;
-  max-width: 80px !important;  
-  color: #000; 
-  list-style: none;
-  display: inline-block; 
-  text-align: center;
-  font-size: 21px; 
-}
 
 #lightMode, #navItemsLeft .navItem { 
   color: #000; 
   list-style: none;
   display: inline-block; 
-  min-width: 115px; 
+  min-width: 80px; 
+  line-height: 30px;
   text-align: center;
-  font-size: 24px; 
+  font-size: 16px; 
 }
 
 /* End Nav Links */
@@ -156,8 +148,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 {
     position: relative;
     top: 50%;
-    width: 64px;
-    height: 30px;
+    width: 50px;
+    height: 20px;
     overflow: hidden;
     margin-left: 1em; 
 }
@@ -199,18 +191,19 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     position: absolute;
     top: 2px;
     left: 4px;
-    width: 20px;
-    height: 10px;
+    width: 10px;
+    height: 8px;
     color: #191D25;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
     line-height: 0.6;
-    padding: 7px 4px;
+    padding: 4px 3px;
     background-color: #FFF;
     border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
+
 
 #LNSwitch-1 .checkbox:checked + .knobs:before
 {
@@ -230,76 +223,63 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     transition: 0.3s ease all;
 }
 
+.DocSearch-Button { 
+  height: 20px !important; 
+  width: 160px !important;
+}
 
+.DocSearch-Button-Keys { 
+  display: none !important; 
+}
 
-/* Media Queries */
-/* Between laptop and Tablet */
-@media only screen and (min-width: 783px) and (max-width: 1000px) { 
-  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
-    padding-right: 7em; 
-  }
+.DocSearch-Search-Icon {
+  height: 15px; 
+}
 
-  #navItemsLeft {
-    padding: 1.4em 1.5em 1.4em 0.3em; 
-  }
-
-    /* Top Navigation */
-    #textDayNight { 
-      font-size: 17px; 
-    }
-    
-    #lnSwitch { 
-      font-size: 17px; 
-    }
-    /* End Top Navigation */
-
-    #navHeader { 
-      font-size: 17px; 
-    }
-  
-    #lightMode, #navItemsLeft .navItem { 
-      font-size: 17px; 
-      min-width: 90px; 
-    }
-
-    .loopLogo { 
-      max-height: 23px;  
-    }
-
+.DocSearch-Button-Placeholder { 
+  font-size: 13px !important; 
 }
 
 
+
+/* Search icon */
+@media only screen and (max-width: 750px) { 
+  .DocSearch-Button { 
+    height: 25px !important; 
+    width: 25px !important;
+    padding: 0 3px !important; 
+  }
+
+  .DocSearch-Search-Icon {
+    height: 13px; 
+  }
+
+}
+
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 668px) and (max-width: 782px) { 
+@media only screen and (min-width: 616px) and (max-width: 999px) { 
+
+  #lightMode, #navItemsLeft .navItem { 
+    line-height: 25px;
+  }
 
   /* Top Navigation */
   #textDayNight { 
-    font-size: 17px; 
+    font-size: 13px; 
   }
   
-  #lnSwitch { 
-    font-size: 17px; 
-  }
   /* End Top Navigation */
 
   .logoSize {
-    max-height: 30px; 
+    min-height: 25px; 
     vertical-align: middle; 
   } 
 
   #navItemsLeft { 
-    padding: 1.4em 0em 1.4em 0; 
+ 
     display: flex; 
     align-items: flex-start;
     float: left; 
-  }
-  
-  .navItemsRight { 
-    padding: 1.4em 4em 1.4em 0em; 
-  }
-  
-  #navHeader { 
-    font-size: 17px; 
   }
 
   #lightMode, #navItemsLeft .navItem { 
@@ -307,14 +287,22 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     min-width: 80px; 
   }
 
+  .navItemsRight {
+    padding: 0.8em 4em 0.7em 0em; 
+  }
+
   .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
     padding-right: 6em; 
+  }
+
+  .navItem li { 
+    padding-top: 3px; 
   }
 
  }
 
  /* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 250px) and (max-width: 667px) { 
+@media only screen and (min-width: 10px) and (max-width: 615px) { 
   .resMob { 
     display: none !important; 
   }
@@ -334,8 +322,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
   }
 
   .loopLogo { 
-    margin: 0.8em 0.5em; 
-    padding-top: 0.25em; 
+    margin: 1.2em 0.8em 0.8em 1.8em; 
   }
 
   #menuToggle {
@@ -443,6 +430,20 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 
   .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
     margin-top: 0.6em; 
+  }
+
+  .DocSearch-Button { 
+    width: 31px !important; 
+  }
+
+  .DocSearch, .DocSearch-Button {
+    height: 30px !important; 
+    margin-top: 0.4em !important;
+  }
+
+  .DocSearch-Button .DocSearch-Search-Icon { 
+    height: 19px; 
+    padding-left: 0.3em;
   }
 
   .githubLogo {
