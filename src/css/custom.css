@@ -4,12 +4,12 @@
  * work well for content-centric websites.
  */
 
- /* Google Font - Montserrat */
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap');
+/* Google Font - Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap");
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #3B3FF5;
+  --ifm-color-primary: #3b3ff5;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -20,10 +20,10 @@
   --ifm-global-shadow-lw: none;
   --ifm-hero-background-color: #20232a;
   /* --ifm-background-color: #000; */
-  --purest-black-color: #000; 
+  --purest-black-color: #000;
 }
 
-* { 
+* {
   font-family: Montserrat, sans-serif;
 }
 
@@ -43,12 +43,12 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 /* Mobile Menu */
-#resHide { 
-  display: none; 
+#resHide {
+  display: none;
 }
 
 #mobMenu {
-  display: none; 
+  display: none;
 }
 
 .darkMode li {
@@ -56,273 +56,264 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .darkMode a {
-  color: white !important; 
+  color: white !important;
 }
-
 
 /* Top Navigation */
-#topNav { 
-  max-height: 35px; 
+#topNav {
+  max-height: 35px;
   background-color: var(--ifm-color-primary);
-  display: flex; 
+  display: flex;
 }
 
-
-#textDayNight { 
-  font-size: 13px; 
-  color: white; 
-  margin-bottom: 0px !important; 
+#textDayNight {
+  font-size: 13px;
+  color: white;
+  margin-bottom: 0px !important;
 }
 /* End Top Navigation */
 
 .logoSize {
-  max-height: 25px; 
-  vertical-align: middle; 
-} 
+  max-height: 25px;
+  vertical-align: middle;
+}
 
 /* content: url("image2.png"); - to replace img in dark mode */
 
-#navItemsLeft { 
-  padding: 0.7em 1.5em 0em 2.3em; 
-  display: flex; 
+#navItemsLeft {
+  padding: 0.7em 1.5em 0em 2.3em;
+  display: flex;
   align-items: flex-start;
-  float: left; 
+  float: left;
 }
 
-.navItemsRight { 
-  padding: 0.7em 4em 0.7em 0em; 
+.navItemsRight {
+  padding: 0.7em 4em 0.7em 0em;
 }
 
-.navItemsRight, img { 
-  padding-left: 1.4em; 
+.navItemsRight,
+img {
+  padding-left: 1.4em;
 }
 
-.darkMode, #navItemsLeft .navItem { 
-  color: white; 
+.darkMode,
+#navItemsLeft .navItem {
+  color: white;
 }
 
 /* Nav Links */
 
-#lightMode, #navItemsLeft .navItem { 
-  color: #000; 
+#lightMode,
+#navItemsLeft .navItem {
+  color: #000;
   list-style: none;
-  display: inline-block; 
-  min-width: 80px; 
+  display: inline-block;
+  min-width: 80px;
   line-height: 30px;
   text-align: center;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 /* End Nav Links */
 
-.loopLogo { 
+.loopLogo {
   margin: 0.2em 0.8em;
 }
 
-#navItemsLeft a img { 
-  max-width: 80px; 
+#navItemsLeft a img {
+  max-width: 80px;
 }
 
-#navItemsLeft a:hover { 
-  font-weight: 600; 
+#navItemsLeft a:hover {
+  font-weight: 600;
   text-decoration: none;
 }
 
 /* remove blue outline focus */
-.navbar__search-input:focus { 
-  outline: 0; 
+.navbar__search-input:focus {
+  outline: 0;
 }
 
 /* Button Night/Day */
 
-.knobs, .layer
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.LNSwitch
-{
-    position: relative;
-    top: 50%;
-    width: 50px;
-    height: 20px;
-    overflow: hidden;
-    margin-left: 1em; 
+.LNSwitch {
+  position: relative;
+  top: 50%;
+  width: 50px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 1em;
 }
 
-.LNSwitch.r, .LNSwitch.r .layer
-{
-    border-radius: 100px;
+.LNSwitch.r,
+.LNSwitch.r .layer {
+  border-radius: 100px;
 }
 
-.checkbox
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
 }
 
-.knobs
-{
-    z-index: 2;
+.knobs {
+  z-index: 2;
 }
 
-.layer
-{
-    width: 100%;
-    background-color: #F2F2F2;
-    transition: 0.3s ease all;
-    z-index: 1;
+.layer {
+  width: 100%;
+  background-color: #f2f2f2;
+  transition: 0.3s ease all;
+  z-index: 1;
 }
 
 /* Button 1 */
-#LNSwitch-1 .knobs:before
-{
-    content: '\2600';
-    position: absolute;
-    top: 2px;
-    left: 4px;
-    width: 10px;
-    height: 8px;
-    color: #191D25;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 0.6;
-    padding: 4px 3px;
-    background-color: #FFF;
-    border-radius: 50%;
-    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+#LNSwitch-1 .knobs:before {
+  content: "\2600";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 10px;
+  height: 8px;
+  color: #191d25;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.6;
+  padding: 4px 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
 }
 
-
-#LNSwitch-1 .checkbox:checked + .knobs:before
-{
-    content: '\263D';
-    left: 33px;
-    color: #fff; 
-    background-color: #000;
+#LNSwitch-1 .checkbox:checked + .knobs:before {
+  content: "\263D";
+  left: 33px;
+  color: #fff;
+  background-color: #000;
 }
 
-#LNSwitch-1 .checkbox:checked ~ .layer
-{
-    background-color: #292929;
+#LNSwitch-1 .checkbox:checked ~ .layer {
+  background-color: #292929;
 }
 
-#LNSwitch-1 .knobs, #LNSwitch-1 .knobs:before, #LNSwitch-1 .layer
-{
-    transition: 0.3s ease all;
+#LNSwitch-1 .knobs,
+#LNSwitch-1 .knobs:before,
+#LNSwitch-1 .layer {
+  transition: 0.3s ease all;
 }
 
-.DocSearch-Button { 
-  height: 20px !important; 
+.DocSearch-Button {
+  height: 20px !important;
   width: 160px !important;
 }
 
-.DocSearch-Button-Keys { 
-  display: none !important; 
+.DocSearch-Button-Keys {
+  display: none !important;
 }
 
 .DocSearch-Search-Icon {
-  height: 15px; 
+  height: 15px;
 }
 
-.DocSearch-Button-Placeholder { 
-  font-size: 13px !important; 
+.DocSearch-Button-Placeholder {
+  font-size: 13px !important;
 }
-
-
 
 /* Search icon */
-@media only screen and (max-width: 750px) { 
-  .DocSearch-Button { 
-    height: 25px !important; 
+@media only screen and (max-width: 750px) {
+  .DocSearch-Button {
+    height: 25px !important;
     width: 25px !important;
-    padding: 0 3px !important; 
+    padding: 0 3px !important;
   }
 
   .DocSearch-Search-Icon {
-    height: 13px; 
+    height: 13px;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 616px) and (max-width: 999px) { 
-
-  #lightMode, #navItemsLeft .navItem { 
+@media only screen and (min-width: 616px) and (max-width: 999px) {
+  #lightMode,
+  #navItemsLeft .navItem {
     line-height: 25px;
   }
 
   /* Top Navigation */
-  #textDayNight { 
-    font-size: 13px; 
+  #textDayNight {
+    font-size: 13px;
   }
-  
+
   /* End Top Navigation */
 
   .logoSize {
-    min-height: 25px; 
-    vertical-align: middle; 
-  } 
-
-  #navItemsLeft { 
- 
-    display: flex; 
-    align-items: flex-start;
-    float: left; 
+    min-height: 25px;
+    vertical-align: middle;
   }
 
-  #lightMode, #navItemsLeft .navItem { 
-    font-size: 17px; 
-    min-width: 80px; 
+  #navItemsLeft {
+    display: flex;
+    align-items: flex-start;
+    float: left;
+  }
+
+  #lightMode,
+  #navItemsLeft .navItem {
+    font-size: 17px;
+    min-width: 80px;
   }
 
   .navItemsRight {
-    padding: 0.8em 4em 0.7em 0em; 
+    padding: 0.8em 4em 0.7em 0em;
   }
 
-  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
-    padding-right: 6em; 
+  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module {
+    padding-right: 6em;
   }
 
-  .navItem li { 
-    padding-top: 3px; 
+  .navItem li {
+    padding-top: 3px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 10px) and (max-width: 615px) {
+  .resMob {
+    display: none !important;
   }
 
- }
-
- /* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 10px) and (max-width: 615px) { 
-  .resMob { 
-    display: none !important; 
+  #resHide {
+    display: flex;
+    height: 60px;
+    max-width: 100px;
   }
 
-  #resHide { 
-    display: flex; 
-    height: 60px; 
-    max-width: 100px; 
+  #mobMenu {
+    display: flex;
   }
 
-  #mobMenu { 
-    display: flex; 
+  #menu,
+  .loopLogo {
+    min-width: 100px;
   }
 
-  #menu, .loopLogo { 
-    min-width: 100px; 
-  }
-
-  .loopLogo { 
-    margin: 1.2em 0.8em 0.8em 1.8em; 
+  .loopLogo {
+    margin: 1.2em 0.8em 0.8em 1.8em;
   }
 
   #menuToggle {
@@ -335,9 +326,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     -webkit-user-select: none;
     user-select: none;
   }
-  
-  #menuToggle input
-  {
+
+  #menuToggle input {
     display: flex;
     width: 40px;
     height: 32px;
@@ -346,9 +336,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     opacity: 0;
     z-index: 2;
   }
-  
-  #menuToggle span
-  {
+
+  #menuToggle span {
     display: flex;
     width: 29px;
     height: 2px;
@@ -358,42 +347,32 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-
-  
-  #menuToggle span:first-child
-  {
+  #menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
-  
-  #menuToggle span:nth-last-child(2)
-  {
+
+  #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
-  
-  #menuToggle input:checked ~ span
-  {
+
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
+    background: #36383f;
   }
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
-  
-  #menu
-  {
+
+  #menu {
     position: absolute;
     list-style-type: none;
     min-width: 100vw;
@@ -401,53 +380,51 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     margin: -25px 0 0 -25px;
     padding: 50px;
     padding-top: 125px;
-    background-color: #F5F6FA;
+    background-color: #f5f6fa;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  .darkMode #menu { 
-    background-color: var(--purest-black-color); 
+  .darkMode #menu {
+    background-color: var(--purest-black-color);
   }
 
-  #menu li
-  {
+  #menu li {
     padding: 10px 0;
     transition-delay: 2s;
   }
-  
-  #menuToggle input:checked ~ ul
-  {
+
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
 
   #menu a:hover {
-    text-decoration: none; 
-    font-weight: 600; 
+    text-decoration: none;
+    font-weight: 600;
   }
 
-  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module { 
-    margin-top: 0.6em; 
+  .searchBox_node_modules-\@docusaurus-preset-classic-node_modules-\@docusaurus-theme-search-algolia-src-theme-SearchBar-styles-module {
+    margin-top: 0.6em;
   }
 
-  .DocSearch-Button { 
-    width: 31px !important; 
+  .DocSearch-Button {
+    width: 31px !important;
   }
 
-  .DocSearch, .DocSearch-Button {
-    height: 30px !important; 
+  .DocSearch,
+  .DocSearch-Button {
+    height: 30px !important;
     margin-top: 0.4em !important;
   }
 
-  .DocSearch-Button .DocSearch-Search-Icon { 
-    height: 19px; 
+  .DocSearch-Button .DocSearch-Search-Icon {
+    height: 19px;
     padding-left: 0.3em;
   }
 
   .githubLogo {
-    padding-left: 0em; 
+    padding-left: 0em;
   }
-
- }
+}
