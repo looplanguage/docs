@@ -1,0 +1,428 @@
+:root { 
+  --ifm-color-primary: #3b3ff5;
+  --black-color: #000; 
+  --black-nav-color: #111111; 
+  --white-color: #fff; 
+}
+
+/* When editing the Day and Night Themes keep in mind: */
+/* That the className for the Night theme = .darkTheme */
+
+
+
+/* Mobile Menu */
+
+.resMob {
+  display: none !important;
+}
+
+.resDesk { 
+  position: fixed;
+  background-color: var(--white-color);
+  margin-bottom: 66px;
+}
+
+.darkTheme .resDesk {
+  background-color: var(--black-color); 
+}
+
+.logoSize {
+  max-height: 25px;
+  vertical-align: middle;
+}
+
+.navItemsLeft {
+  padding: 0.7em 1.5em 0.7em 2.3em;
+  display: flex;
+  align-items: center; 
+  float: left;
+  width: 100%; 
+}
+
+.navItemsRight {
+  width: 28em;
+  display: flex; 
+  align-items: center;
+  position: fixed; 
+  right: 0; 
+}
+
+.navItemsRight,
+img {
+  padding-left: 1.4em;
+}
+
+
+/* Nav Links */
+
+.lightTheme .navItemsLeft .navItem {
+  color: var(--black-color);
+  list-style: none;
+  display: inline-block;
+  min-width: 80px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.darkTheme .navItemsLeft .navItem { 
+  color: var(--white-color);
+list-style: none;
+display: inline-block;
+min-width: 80px;
+line-height: 30px;
+text-align: center;
+font-size: 16px;
+}
+
+/* End Nav Links */
+
+.loopLogo {
+  margin: 0.2em 0.8em;
+}
+
+.navItemsLeft a img {
+  max-width: 80px;
+}
+
+.navItemsLeft a:hover {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+/* Button Night/Day */
+
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.LNSwitch {
+  position: relative;
+  top: 50%;
+  width: 50px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 1em;
+}
+
+.LNSwitch.r,
+.LNSwitch.r .layer {
+  border-radius: 100px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #f2f2f2;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 1 */
+.LNSwitchNight .knobs:before {
+  content: "\2600";
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 10px;
+  height: 8px;
+  color: var(--black-color);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.6;
+  padding: 4px 3px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.LNSwitchNight .checkbox:checked + .knobs:before {
+  content: "\263D";
+  left: 33px;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.LNSwitchNight .checkbox:checked ~ .layer {
+  background-color: #292929;
+}
+
+.LNSwitchNight .knobs,
+.LNSwitchNight .knobs:before,
+.LNSwitchNight .layer {
+  transition: 0.3s ease all;
+}
+
+
+@media only screen and (min-width: 850px) and (max-width: 997px) {
+  .navItemsRight { 
+    width: 23em; 
+    right: 1.5em; 
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+
+
+  .logoSize {
+    min-height: 25px;
+    vertical-align: middle;
+  }
+
+  .navItemsLeft {
+    display: flex;
+    align-items: flex-start;
+    float: left;
+    padding: 0.7em 1.5em 0.7em 2.3em;
+  }
+
+  .navItemsLeft .navItem {
+    font-size: 17px;
+    line-height: 25px; 
+  }
+
+  .navItemsRight { 
+    width: 23em; 
+    right: 1.5em; 
+  }
+
+
+}
+
+@media only screen and (min-width: 616px) and (max-width: 749px) {
+  .navItemsRight { 
+    width: 15em; 
+    right: 1.5em; 
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 10px) and (max-width: 615px) {
+  .resDesk {
+    display: none !important;
+  }
+
+  .resMob {
+    display: flex !important;
+    position: fixed;
+    height: 60px;
+    padding-top: 0.7em; 
+    background-color: var(--white-color);
+    width: 100%; 
+    z-index: 2; 
+  }
+
+  .darkTheme .resMob { 
+    background-color: var(--black-nav-color);
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+
+  .loopLogo {
+    margin: 0.35em 0 0em 2.8em; 
+  }
+
+  .menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0.7em;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--ifm-color-primary);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), 
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: var(--ifm-color-primary);
+  }
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /* input box groter maken */
+
+  .menu {
+    position: fixed;
+    list-style-type: none;
+    min-width: 60vw;
+    height: 100vh;
+    margin: -25px 0 0 -25px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #fcfcfc;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-166%, 0);
+    transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .menuDark { 
+    position: fixed;
+    list-style-type: none;
+    min-width: 60vw;
+    height: 100vh;
+    margin: -25px 0 0 -25px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: var(--black-color);
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-166%, 0);
+    transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .menu .overlay { 
+    width: 40vw; 
+    height: 100vh; 
+    position: absolute;
+    z-index: -999; 
+    top: 0; 
+    margin-left: 50.5vw; 
+  }
+
+  .darkMenu .overlay { 
+    width: 40vw; 
+    height: 100vh; 
+    position: absolute;
+    z-index: -999; 
+    top: 0; 
+    margin-left: 50.5vw; 
+  }
+
+  .noOverlay { 
+    display: none; 
+  }
+
+  .menu li {
+    padding: 10px 0;
+    color: var(--black-color);
+    font-weight: 500; 
+  }
+
+  .menuDark li {
+    padding: 10px 0;
+    color: var(--white-color);
+    font-weight: 500; 
+  }
+
+  .menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  .menu a:hover {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .githubLogo {
+    padding-left: 0em;
+  }
+
+  .logoCheckbox { 
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.7em; 
+  }
+
+  .navItemsRight, img { 
+    padding-left: 0em; 
+  }
+
+  /* Button Night/Day - added bc it would normally be in desktop navbar - but display navbar = none, so switch display is also none */
+
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.LNSwitch {
+  position: relative;
+  top: 0%;
+  width: 50px;
+  height: 20px;
+  overflow: hidden;
+  margin-left: 1em;
+}
+
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+
+}
