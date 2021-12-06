@@ -4,13 +4,13 @@ import SearchBar from "@theme/SearchBar";
 import styles from "../css/navbar.module.css";
 
 // Loop logos
-import lightLoopLogo from "../components/img/loopLogoBlack.png";
-import darkLoopLogo from "../components/img/loopLogoWhite.png";
+import lightLoopLogo from "img/loopLogoBlack.png";
+import darkLoopLogo from "img/loopLogoWhite.png";
 
 
 // Github logos
-import lightGithub from "../components/img/GitHubWhite.png";
-import darkGithub from "../components/img/GitHub.png";
+import lightGithub from "img/GitHubWhite.png";
+import darkGithub from "img/GitHub.png";
 
 // mousedown event 
 // input value checked true or false 
