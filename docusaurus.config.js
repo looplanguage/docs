@@ -75,8 +75,8 @@
           title: "Loop",
           logo: {
             alt: "Loop Logo",
-            src: "img/logo.png",
-            srcDark: "img/logoWit.png",
+            src: "img/loopLogoBlack.png",
+            srcDark: "img/loopLogoWhite.png",
           },
           items: [
             {
@@ -98,6 +98,8 @@
               href: "https://github.com/looplanguage",
               label: "GitHub",
               position: "right",
+              src: "img/Github.png", 
+              srcDark: "img/GithubWhite.png"
             },
           ],
         },
