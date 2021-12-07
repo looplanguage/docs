@@ -9,8 +9,8 @@ import darkLoopLogo from "../../static/img/loopLogoWhite.png";
 
 
 // Github logos
-import lightGithub from "../../static/img/GitHubWhite.png";
-import darkGithub from "../../static/img/GitHub.png";
+import lightGithub from "../../static/img/GithubWhite.png";
+import darkGithub from "../../static/img/Github.png";
 
 // mousedown event 
 // input value checked true or false 
