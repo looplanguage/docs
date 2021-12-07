@@ -22,7 +22,6 @@ function Navbar() {
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
 
   function toggleTheme() {
-    console.log(isDarkTheme);
     if (isDarkTheme) {
       setLightTheme();
     } else {
@@ -31,7 +30,7 @@ function Navbar() {
   }
 
   function toggleMenu() { 
-  const isChecked = document.getElementById("checkMenu").checked; 
+    const isChecked = document.getElementById("checkMenu").checked; 
 
     if (isChecked){
         document.getElementById("checkMenu").checked = false;
@@ -40,8 +39,10 @@ function Navbar() {
 
   return (
     <nav className={`${styles.lightModeNavBar} ${isDarkTheme ? styles.darkTheme : styles.lightTheme}`}>
-      <ul className={`${styles.navItemsLeft} ${styles.resDesk}`}>
+      < ul className={`${styles.navItemsLeft} ${styles.resDesk}`}>
+        <a href="/">
         <img className={`${styles.loopLogo} ${styles.logoSize}`} src={isDarkTheme ? darkLoopLogo : lightLoopLogo} />
+        </a>
         <a className={`${styles.navItem}`} href="/docs/intro">
           <li className={`${styles.leftNavBar}`}>Docs</li>
         </a>
@@ -51,7 +52,7 @@ function Navbar() {
       
 
       {/* Right Side of the Navbar */}
-      <div className={`${styles.navbar__items} ${styles.navItemsRight}`}>         
+      <div className={`${styles.navItemsRight}`}>         
 
         {/* search bar docusaurus */}
 
@@ -62,8 +63,8 @@ function Navbar() {
 
         {/* Toggle Switch */}
 
-        <div className={`${styles.LNSwitch} ${styles.r} ${styles.LNSwitchNight}`}>
-            <input onClick={toggleTheme} type="checkbox" className={`${styles.checkbox}`} />
+        <div className={`${styles.LNSwitch} ${styles.r} ${styles.LNSwitchNight}`} >
+            <input onClick={toggleTheme} type="checkbox" className={`${styles.checkbox}`} defaultChecked={isDarkTheme}/>
             <div className={`${styles.knobs}`}></div>
             <div className={`${styles.layer}`}></div>
         </div>
@@ -95,7 +96,7 @@ function Navbar() {
           </a>
           <div className={`${styles.LNSwitch} ${styles.r} ${styles.LNSwitchNight}`}>
               {/* Checkbox Day / Night Switch  */}
-            <input onClick={toggleTheme} type="checkbox" className={`${styles.checkbox}`} />
+            <input onClick={toggleTheme} type="checkbox" className={`${styles.checkbox}`} defaultChecked={isDarkTheme} />
             <div className={`${styles.knobs}`}></div>
             <div className={`${styles.layer}`}></div>
         </div> 
@@ -112,7 +113,7 @@ function Navbar() {
                 <img src={isDarkTheme ? lightGithub : darkGithub} className={`${styles.logoSize} ${styles.githubLogo}`} />
               </li>
             </a>
-            <div onClick={toggleMenu} className={`${styles.overlay}`}></div>
+            <div onClick={toggleMenu} className={`${styles.overlay}`} onChange={() => setChecked(!checked)}></div>
 
           </ul>
           </div>
@@ -126,6 +127,7 @@ function Navbar() {
         </div>
       </nav>
     </nav>
+    
   );
 }
 

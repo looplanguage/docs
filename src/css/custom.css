@@ -19,6 +19,7 @@
   --ifm-code-font-size: 95%;
   --ifm-global-shadow-lw: none;
   --ifm-hero-background-color: #20232a;
+  --docsearch-black-color: #353535; 
 }
 
 * {
@@ -39,4 +40,15 @@ html[data-theme="light"] .docusaurus-highlight-code-line {
 html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: #000 !important;
 }
+
+html[data-theme='dark'] .DocSearch { 
+  --docsearch-searchbox-background: var(--docsearch-black-color);
+  --docsearch-searchbox-focus-background: var(--docsearch-black-color);
+}
+
+.main-wrapper { 
+  margin-top: 52.5px; 
+}
+
+/* This is needed because of the fixed position that the Navbar has. Without these margins some content may fall off. */
 

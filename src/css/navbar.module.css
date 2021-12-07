@@ -1,7 +1,7 @@
 :root { 
   --ifm-color-primary: #3b3ff5;
   --black-color: #000; 
-  --black-nav-color: #111111; 
+  --black-nav-color: #414141; 
   --white-color: #fff; 
 }
 
@@ -19,11 +19,26 @@
 .resDesk { 
   position: fixed;
   background-color: var(--white-color);
-  margin-bottom: 66px;
 }
 
-.darkTheme .resDesk {
-  background-color: var(--black-color); 
+.lightTheme { 
+  justify-content: center; 
+  display: flex; 
+  width: 100%; 
+  background-color: var(--white-color);
+  height: 52.5px; 
+  position: fixed;  
+  z-index: 999; 
+}
+
+.darkTheme { 
+  justify-content: center; 
+  display: flex; 
+  width: 100%; 
+  background-color: var(--black-color);
+  height: 52.5px; 
+  position: fixed;  
+  z-index: 999; 
 }
 
 .logoSize {
@@ -32,11 +47,16 @@
 }
 
 .navItemsLeft {
-  padding: 0.7em 1.5em 0.7em 2.3em;
-  display: flex;
-  align-items: center; 
+  padding: 0.7em 0;
   float: left;
-  width: 100%; 
+  width: 87%; 
+}
+
+.darkTheme .navItemsLeft {
+  padding: 0.7em 0;
+  float: left;
+  width: 87%; 
+  background-color: var(--black-color); 
 }
 
 .navItemsRight {
@@ -48,11 +68,14 @@
   top: 4px; 
 }
 
-.navItemsRight,
-img {
-  padding-left: 1.4em;
+.darkTheme .navItemsRight {
+  width: 28em;
+  display: flex; 
+  align-items: center;
+  position: fixed; 
+  right: 0; 
+  top: 4px; 
 }
-
 
 /* Nav Links */
 
@@ -67,7 +90,7 @@ img {
 }
 
 .darkTheme .navItemsLeft .navItem { 
-  color: var(--white-color);
+color: var(--white-color);
 list-style: none;
 display: inline-block;
 min-width: 80px;
@@ -79,11 +102,11 @@ font-size: 16px;
 /* End Nav Links */
 
 .loopLogo {
-  margin: 0.2em 0.8em;
+  margin: 0.2em 0.8em 0.2em 0;
 }
 
 .navItemsLeft a img {
-  max-width: 80px;
+  max-width: 70px;
 }
 
 .navItemsLeft a:hover {
@@ -147,7 +170,7 @@ font-size: 16px;
   left: 4px;
   width: 10px;
   height: 8px;
-  color: var(--black-color);
+  color: var(--black-nav-color);
   font-size: 13px;
   font-weight: bold;
   text-align: center;
@@ -166,7 +189,7 @@ font-size: 16px;
 }
 
 .LNSwitchNight .checkbox:checked ~ .layer {
-  background-color: #292929;
+  background-color: var(--black-nav-color);
 }
 
 .LNSwitchNight .knobs,
@@ -175,12 +198,17 @@ font-size: 16px;
   transition: 0.3s ease all;
 }
 
-
 @media only screen and (min-width: 850px) and (max-width: 997px) {
   .navItemsRight { 
     width: 23em; 
     right: 1.5em; 
-    top: 0.7em; 
+    top: 11px; 
+  }
+
+  .darkTheme .navItemsRight { 
+    top: 11px; 
+    width: 23em; 
+    right: 1.5em; 
   }
 }
 
@@ -198,6 +226,7 @@ font-size: 16px;
     align-items: flex-start;
     float: left;
     padding: 0.7em 1.5em 0.7em 2.3em;
+    z-index: 999; 
   }
 
   .navItemsLeft .navItem {
@@ -206,6 +235,12 @@ font-size: 16px;
   }
 
   .navItemsRight { 
+    width: 23em; 
+    right: 1.5em; 
+    top: 0.7em; 
+  }
+
+  .darkTheme .navItemsRight { 
     width: 23em; 
     right: 1.5em; 
     top: 0.7em; 
@@ -220,10 +255,17 @@ font-size: 16px;
     right: 1.5em; 
     top: 0.7em; 
   }
+
+  .darkTheme .navItemsRight { 
+    width: 15em; 
+    right: 1.5em; 
+    top: 0.7em; 
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 10px) and (max-width: 615px) {
+@media only screen and (min-width: 10px) and (max-width: 616px) {
   .resDesk {
     display: none !important;
   }
@@ -239,7 +281,7 @@ font-size: 16px;
   }
 
   .darkTheme .resMob { 
-    background-color: var(--black-nav-color);
+    background-color: var(--black-color);
   }
 
   .mobMenu {
@@ -348,7 +390,7 @@ font-size: 16px;
     margin-left: 50.5vw; 
   }
 
-  .darkMenu .overlay { 
+  .menuDark .overlay { 
     width: 40vw; 
     height: 100vh; 
     position: absolute;
@@ -377,10 +419,22 @@ font-size: 16px;
     transform: none;
   }
 
-  .menu a:hover {
-    text-decoration: none;
+  .menu .navItem li:hover {
     font-weight: 600;
   }
+
+  .menu a { 
+    text-decoration: none;
+  }
+
+  .menuDark .navItem li:hover {
+    font-weight: 600;
+  }
+
+  .menuDark a { 
+    text-decoration: none;
+  }
+
 
   .githubLogo {
     padding-left: 0em;
