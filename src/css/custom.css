@@ -46,9 +46,3 @@ html[data-theme='dark'] .DocSearch {
   --docsearch-searchbox-focus-background: var(--docsearch-black-color);
 }
 
-.main-wrapper { 
-  margin-top: 52.5px; 
-}
-
-/* This is needed because of the fixed position that the Navbar has. Without these margins some content may fall off. */
-

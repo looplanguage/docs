@@ -65,18 +65,19 @@
             },
             // Unicode icons such as '\u2600' will work
             // Unicode with 5 chars require brackets: '\u{1F602}'
-            lightIcon: '\u{1F602}',
+            lightIcon: '\u{1F31E}',
             lightIconStyle: {
               marginLeft: '1px',
             },
           },
         },
         navbar: {
-          title: "Loop",
+          hideOnScroll: true, 
+          title: " ",
           logo: {
             alt: "Loop Logo",
-            src: "img/logo.png",
-            srcDark: "img/logoWit.png",
+            src: "img/loopLogoBlack.png",
+            srcDark: "img/loopLogoWhite.png",
           },
           items: [
             {
@@ -86,18 +87,18 @@
               label: "Docs",
             },
             {
-              type: 'search',
-              position: 'right',
-            },
-            {
               to: "/blog",
               label: "Updates",
               position: "left",
             },
             {
-              href: "https://github.com/looplanguage",
               label: "GitHub",
+              href: "https://github.com/looplanguage",
               position: "right",
+            },
+            {
+              type: 'search',
+              position: 'right',
             },
           ],
         },
