@@ -7,7 +7,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import "../theme/dracula-prism.css";
-import codeShotsDM from "../../static/img/codeShots.png"
+import codeShotsDM from "../../static/img/codeShotsDM.png"
 import codeShotsNM from "../../static/img/codeShotsNM.png"
 // import HomepagePartners from "../components/HomepagePartners"; May be included in the future, but is inrelevent at the moment
 
