@@ -4,27 +4,62 @@
  * work well for content-centric websites.
  */
 
+/* Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,400&display=swap');
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #3b3ff5;
+  --ifm-color-primary-dark: #1e23f4;
+  --ifm-color-primary-darker: #1014f3;
+  --ifm-color-primary-darkest: #0a0eca;
+  --ifm-color-primary-light: #585bf6;
+  --ifm-color-primary-lighter: #666af7;
+  --ifm-color-primary-lightest: #9294f9;
+  --ifm-color-black: #000; 
   --ifm-code-font-size: 95%;
   --ifm-global-shadow-lw: none;
   --ifm-hero-background-color: #20232a;
+  --docsearch-black-color: #353535; 
+  --ifm-background-color: #fff; 
+  --ifm-navbar-background-color: #fff; 
+  --ifm-dropshadow-color: #e6e6e6; 
+  --ifm-font-family: Montserrat, sans-serif; 
+}
+
+* {
+  font-family: Montserrat, sans-serif;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #000000;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme="dark"] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+.navbar {
+  box-shadow: 0px 0px 3px var(--ifm-dropshadow-color);
 }
+
+/* Overrides the default variables set for light theme */
+html[data-theme='dark'] {
+  --ifm-navbar-background-color: #000000; 
+  --ifm-color-black: #fff; 
+  --ifm-background-color: #18191A; 
+  --ifm-dropshadow-color: #161616; 
+}
+
+html[data-theme="light"] .docusaurus-highlight-code-line {
+  background-color: #fff !important;
+}
+
+html[data-theme="dark"] .docusaurus-highlight-code-line {
+  background-color: #000 !important;
+}
+
+html[data-theme='dark'] .DocSearch { 
+  --docsearch-searchbox-background: var(--docsearch-black-color);
+  --docsearch-searchbox-focus-background: var(--docsearch-black-color);
+}
+

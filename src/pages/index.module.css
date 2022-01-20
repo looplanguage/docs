@@ -10,6 +10,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
+
+
 .section {
   padding: 72px 0;
 }
@@ -51,25 +54,51 @@
   max-width: 768px;
 }
 
+
 .hero {
-  background-color: #2b3137;
   padding: 48px;
+  display: flex;
+}
+
+.heroBanner { 
+  background-color :var(--ifm-background-color); 
+  background-image: url("../../static/img/backgroundLoop.png");
+  background-repeat: no-repeat;
+  background-position: 105% 10em;
 }
 
 .heroInner {
   margin: 0 auto;
-  max-width: 1100px;
+  min-width: 450px; 
+  max-width: 900px;
   padding: 0 20px;
 }
 
 .heroProjectTagline {
   color: #fff;
-  font-size: 60px;
+  font-size: 3em;
   margin: 0;
+}
+
+.heroTitleTextHtml { 
+  color: var(--ifm-color-black); 
 }
 
 .heroTitleTextHtml b {
   color: var(--ifm-color-primary);
+  border-bottom: 5px solid var(--ifm-color-primary); 
+  border-radius: 1px;
+}
+
+.heroImage { 
+  max-width: 500px; 
+  margin: 0 auto; 
+  margin-left: 8em; 
+}
+
+.codeIMG { 
+  display: flex; 
+  justify-content: flex-end;
 }
 
 @keyframes jackInTheBox {
@@ -104,13 +133,10 @@
 .indexCtas {
   --ifm-button-size-multiplier: 1.6;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   margin-top: 24px;
-}
-
-.indexCtas a:last-of-type {
-  margin: 20px 36px;
+  justify-content: flex-start;
 }
 
 .indexCtasGitHubButtonWrapper {
@@ -119,31 +145,102 @@
 
 .indexCtasGitHubButton {
   overflow: hidden;
+  margin: 20px 36px;
+
 }
 
 .indexCtaTryNowButton:hover {
   color: var(--ifm-color-primary);
 }
 
+@media only screen and (max-width: 1200px) {
+  .heroInner {
+    margin: 0 auto;
+    width: 450px; 
+    padding: 0 20px;
+  }
+  
+  .heroImage { 
+    width: 400px; 
+    margin: 0 auto; 
+    margin-left: 5em; 
+    margin-top: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .heroImage {
+    margin-left: 2em;  
+  }
+
+  .heroProjectTagline { 
+    font-size: 2em; 
+  }
+
+  .heroBanner { 
+    background-position: 105% 7.5em;
+  }
+
+}
+
+@media only screen and (max-width: 950px) { 
+  .heroImage {
+    margin-left: 1.5em;  
+    width: 350px;
+  }
+
+  .heroBanner { 
+    background-position: 105% 6em;
+  }
+}
+
+@media only screen and (max-width: 884px) {
+  .hero { 
+    display: block; 
+  }
+
+  .heroInner { 
+    width: 80vw; 
+    margin: 0 auto; 
+  }
+
+  .heroImage { 
+    width: 100vw; 
+    margin-left: 7em; 
+    margin-top: 70px; 
+  }
+
+  .heroBanner {
+    background-position: 115% 25em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero {
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%; 
   }
 
-  .heroInner {
-    padding: 0;
+  .heroInner { 
+    width: 80vw; 
   }
 
   .heroProjectTagline {
-    font-size: 36px;
+    font-size: 2.3em;
     text-align: center;
+    margin-right: 2em;
+    margin-left: 2em;
   }
 
   .heroLogo {
     display: block;
     float: none;
     margin: 0 auto;
+  }
+
+  .heroBanner { 
+    background-position: 105% 16em;
   }
 
   .indexCtas {
@@ -157,4 +254,68 @@
   .indexCtasGitHubButton {
     display: none;
   }
+
+  .heroImage { 
+    width: 400px; 
+    margin-left: 20%; 
+    margin-top: 50px; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero { 
+    padding-left: 1px; 
+    margin: 0; 
+  }
+
+  .heroInner { 
+    width: 99vw; 
+  }
+
+  .heroProjectTagline { 
+    font-size: 2em; 
+    width: 80vw; 
+    margin-left: 8%;
+  }
+
+  .heroImage { 
+    width: 75vw; 
+    margin-left: 15%; 
+  }
+
+  .indexCtas { 
+    width: 80vw;
+    padding-left: 18%;
+  }
+
+  .heroBanner {
+    background-position: 150% 20em;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  .hero { 
+    padding-left: 1px; 
+    margin: 0; 
+  }
+
+  .heroProjectTagline { 
+    /* font-size: 2em;  */
+    /* width: 80vw;  */
+    margin-left: 5%;
+  }
+
+  .heroImage { 
+    /* width: 75vw;  */
+    margin-left: 15%; 
+  }
+
+  .indexCtas { 
+    /* width: 80vw; */
+    padding-left: 12%;
+  }
+
+  
+
 }
