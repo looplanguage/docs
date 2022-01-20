@@ -19,7 +19,7 @@ function HomepageHeader() {
         <div className={styles.heroInner}>
           <h1 className={styles.heroProjectTagline}>
             <span className={styles.heroTitleTextHtml}>
-              A <b>dynamic</b>, type-safe programming language
+              A <b>Modern</b>, Type-safe Programming Language
             </span>
           </h1>
           <div className={styles.indexCtas}>

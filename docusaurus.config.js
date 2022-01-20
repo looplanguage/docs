@@ -3,7 +3,7 @@
 (
   module.exports = {
     title: "Loop Language",
-    tagline: "A modern dynamic type-safe, programming language.",
+    tagline: "A Modern Type-safe Programming Language.",
     url: "https://looplang.org/",
     baseUrl: "/",
     onBrokenLinks: "throw",
@@ -86,6 +86,11 @@
               label: "Docs",
             },
             {
+              href: "https://downloads.looplang.org",
+              position: "left",
+              label: "Downloads",
+            },
+            {
               to: "/blog",
               label: "Updates",
               position: "left",
@@ -111,14 +116,26 @@
                   label: "Introduction",
                   to: "/docs/intro",
                 },
+                {
+                  label: "Installation",
+                  to: "/docs/usage/installation",
+                },
+                {
+                  label: "First App",
+                  to: "/docs/usage/first-app",
+                },
               ],
             },
             {
               title: "Community",
               items: [
                 {
-                  label: "Twitter",
-                  href: "https://twitter.com/kanersps",
+                  label: "Discord",
+                  href: "https://discord.gg/T3tqQBTyJA",
+                },
+                {
+                  label: "Jira",
+                  href: "https://looplang.atlassian.net/jira/software/c/projects/LOOP/issues",
                 },
                 {
                   label: "Contributor Guidelines",

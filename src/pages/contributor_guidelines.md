@@ -34,7 +34,7 @@ Celebrate your success after your pull request is merged!
 
 ## Where can I go for help?
 
-If you need help, you can ask questions by creating an issue, commenting on existing issues, joining our Discord server and mailing kane.petra@looplang.org or wouter.pennings@looplang.org
+If you need help, you can ask questions by creating an issue, commenting on existing issues, joining our [Discord server](https://discord.gg/T3tqQBTyJA) and mailing kane.petra@looplang.org or wouter.pennings@looplang.org
 
 ## What does the Code of Conduct mean for me?
 

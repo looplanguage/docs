@@ -7,7 +7,7 @@ sidebar_position: 100
 
 1. Create a directory named as your application, we'll be using "example"
 2. Now create a file named as your application as well. "example.loop"
-3. Open this file in your favourite editor & write `print("Hello World!")` (without the quotes)
+3. Open this file in your favourite editor & write `println("Hello, World!")`
 4. Now you can run your application:
    1. Windows: `./loop.exe example.loop`
    2. Linux: `./loop example.loop`

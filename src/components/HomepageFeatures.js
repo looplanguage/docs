@@ -35,7 +35,7 @@ const FeatureList = [
   {
     title: "Lightning Fast",
     Svg: LightningIcon,
-    description: <>Placeholder</>,
+    description: <>Using Just-In-Time compilation, Loop is as fast as all your other favorite languages, but a lot more friendly</>,
   },
   {
     title: "Cross Platform",
