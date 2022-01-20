@@ -53,11 +53,30 @@
 
           //... other Algolia params
         },
+        colorMode: {
+          defaultMode: 'light',
+          disableSwitch: false,
+          respectPrefersColorScheme: false,
+          switchConfig: {
+            darkIcon: '🌙',
+            darkIconStyle: {
+              marginLeft: '2px',
+            },
+            // Unicode icons such as '\u2600' will work
+            // Unicode with 5 chars require brackets: '\u{1F602}'
+            lightIcon: '\u{1F31E}',
+            lightIconStyle: {
+              marginLeft: '1px',
+            },
+          },
+        },
         navbar: {
-          title: "Loop",
+          hideOnScroll: true, 
+          title: " ",
           logo: {
             alt: "Loop Logo",
-            src: "img/logo.png",
+            src: "img/loopLogoBlack.png",
+            srcDark: "img/loopLogoWhite.png",
           },
           items: [
             {
@@ -72,9 +91,13 @@
               position: "left",
             },
             {
-              href: "https://github.com/looplanguage",
-              label: "GitHub",
+              label: "GitLab",
+              href: "https://gitlab.com/looplanguage",
               position: "right",
+            },
+            {
+              type: 'search',
+              position: 'right',
             },
           ],
         },
@@ -111,8 +134,8 @@
                   to: "/blog",
                 },
                 {
-                  label: "GitHub",
-                  href: "https://github.com/looplanguage",
+                  label: "GitLab",
+                  href: "https://gitlab.com/looplanguage",
                 },
               ],
             },
