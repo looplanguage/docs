@@ -92,8 +92,8 @@
               position: "left",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/looplanguage",
+              label: "GitLab",
+              href: "https://gitlab.com/looplanguage",
               position: "right",
             },
             {
@@ -135,8 +135,8 @@
                   to: "/blog",
                 },
                 {
-                  label: "GitHub",
-                  href: "https://github.com/looplanguage",
+                  label: "GitLab",
+                  href: "https://gitlab.com/looplanguage",
                 },
               ],
             },
