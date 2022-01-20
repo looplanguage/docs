@@ -1,3 +1,7 @@
+// Companies that use Loop Language component
+// Current images that are being used are examples, not real companies. Please change when loading in the component. :) 
+
+
 import React from "react";
 import clsx from "clsx";
 import ThemedImage from '@theme/ThemedImage';
