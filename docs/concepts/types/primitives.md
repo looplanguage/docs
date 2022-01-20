@@ -5,17 +5,24 @@ sidebar_position: 100
 
 # Primitives
 
-## Types
-
 Listed below are all the different types that Loop has out of the box. All the types have an explanations and some examples.
 
-### Integer
+## Integer
 
 An integer is a primitive value that can be up to 64bits in length. You can define an integer like this:
 
 ```loop
 var integer = 10; // Positive integer
 var integer = -200; // Negative integer
+```
+
+### Methods
+
+#### Convert to string
+
+```loop
+// Returns 123 to string
+123.to_string();
 ```
 
 ## Booleans
@@ -34,6 +41,17 @@ A string is a sequence of characters inside `"`'s. You can define a string like 
 ```loop
 var string = "hello"; // A single word
 var string = "hello world"; // Multiple words
+```
+
+#### Methods
+
+##### Convert to integer
+
+This method will cause an exception if the string is unable to be converted.
+
+```loop
+// Converts the string "123" to integer
+"123".to_int();
 ```
 
 ## Null
@@ -93,6 +111,52 @@ Or a simpler array:
 ```loop
 var array = [100, 200, 300];
 var value = array[1] // sets the value of "value" to 200
+```
+
+### Methods
+
+#### array.add(element1, element2, ...)
+
+```loop
+// Initialize new array
+var x = [0, 1]
+
+// Add 2 to the array
+x.add(2)
+
+// Array will now be [0, 1, 2]
+x
+
+// It's also possible to add multiple to the array at once
+x.add(3, 4, 5)
+
+// Array will now be [0, 1, 2, 3, 4, 5]
+x
+```
+
+#### array.remove(index: Integer)
+
+```loop
+var x = [0, 1, 2]
+
+// Removes index 0 from the array
+x.remove(0)
+
+// Removes index 1 from the array
+x.remove(1)
+
+// Array will now be [1]
+x
+```
+
+#### array.length()
+
+```loop
+// Initialize array with 3 elements
+var x = [0, 1, 2]
+
+// Returns 3
+x.length()
 ```
 
 ## Hashmaps
