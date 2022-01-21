@@ -275,7 +275,7 @@
   .heroProjectTagline { 
     font-size: 2em; 
     width: 80vw; 
-    margin-left: 8%;
+    margin-left: 6%;
   }
 
   .heroImage { 
@@ -285,7 +285,7 @@
 
   .indexCtas { 
     width: 80vw;
-    padding-left: 18%;
+    padding-left: 15%;
   }
 
   .heroBanner {
@@ -298,6 +298,10 @@
   .hero { 
     padding-left: 1px; 
     margin: 0; 
+  }
+
+  .heroBanner { 
+    overflow: hidden;
   }
 
   .heroProjectTagline { 
