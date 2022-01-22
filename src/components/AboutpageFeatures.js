@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import styles from "./HomepageFeatures.module.css";
+import styles from "./AboutpageFeatures.module.css";
 
 function LightningIcon() {
   return (
@@ -28,12 +28,12 @@ function ComputerIcon() {
 
 const FeatureList = [
   {
-    title: "Easy to Use",
+    title: "Accessibility",
     Svg: LightbulbIcon,
     description: <> Loop is made with ease of use in mind, it's primary target audience is just regular folk. Meaning that each design decision went into being easy!</>,
   },
   {
-    title: "Lightning Fast",
+    title: "Passion for ICT",
     Svg: LightningIcon,
     description: <>Placeholder</>,
   },
@@ -57,13 +57,13 @@ function Feature({ Svg, title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function AboutpageFeatures() {
   return (
     <section className={styles.features}>
       <div className={clsx("container")}>
         <div className={styles.row}>
-          <h6 className={styles.subHeaderText}>loop languages top</h6>
-          <h1 className={styles.headerText}>three best pros</h1>
+          <h6 className={styles.subHeaderText}>our 3 greatest</h6>
+          <h1 className={styles.headerText}>core values</h1>
         </div>
         <div className="row">
           {" "}

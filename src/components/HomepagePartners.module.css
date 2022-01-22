@@ -12,6 +12,7 @@
     margin: 2em 0 0 0; 
     font-family: var(--ifm-font-family);
     font-size: 1em; 
+    font-weight: 500;
   }
   
   .headerText { 
@@ -20,6 +21,7 @@
     margin: 7px 0 75px 0;
     font-family: var(--ifm-font-family);
     font-size: 3em; 
+    font-weight: 600;
   }
 
 

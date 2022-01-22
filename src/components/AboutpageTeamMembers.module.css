@@ -1,0 +1,203 @@
+/* Headlines  */
+
+.subHeaderText { 
+    text-align: center; 
+    text-transform: uppercase;
+    color: var(--ifm-color-primary);
+    margin: 3em 0 0 0; 
+    font-family: var(--ifm-font-family);
+    font-size: 1em; 
+    font-weight: 500; 
+  }
+  
+  .headerText { 
+    text-align: center;
+    text-transform: capitalize;
+    margin: 7px 0 75px 0;
+    font-family: var(--ifm-font-family);
+    font-size: 3em; 
+    font-weight: 600; 
+  }
+
+/* Start list item Team Members - Container */
+
+.listMembers {
+    width: 50%; 
+    list-style: none !important;
+    display: flex; 
+    margin-bottom: 3em;
+    float: left;
+}
+
+/* Profile Picture Team Member */
+
+.picMember { 
+    width: 15%; 
+    height: 15%; 
+    margin-right: 4%; 
+}
+
+/* Description Team Members */
+
+.descMembers { 
+    width: 65%; 
+}
+
+.descMembers p { 
+    font-size: 0.9em; 
+}
+
+/* Header Team Member - Github logo, headlines */
+
+.headerMembers { 
+    width: 100%; 
+}
+
+.headerMembers a { 
+    width: 10%;
+    float: left; 
+    margin-right: 4%; 
+    margin-top: 1%;
+}
+
+.descMembers h2, h5 { 
+    padding: 0; 
+    margin: 0; 
+    max-width: 80%; 
+    float: left; 
+    font-family: var(--ifm-font-family);
+}
+
+.descMembers h2 { 
+    font-weight: 700; 
+    width: 100%; 
+}
+
+.descMembers h5 { 
+    font-weight: 500; 
+    width: 100%; 
+    margin-bottom: 3%; 
+}
+
+  @media only screen and (max-width: 1050px) {
+
+    .headerText { 
+      font-size: 2em; 
+    }
+  
+    .subHeaderText { 
+      font-size: 0.9em; 
+    }
+  }
+
+@media only screen and (max-width: 1025px) {
+    .listMembers {
+        width: 95%; 
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .descMembers {
+        width: 50%;
+    }
+
+    .picMember {
+        width: 13%;
+    }
+
+    .headerMembers a {
+        margin-right: 3%;
+    }
+
+    .descMembers h5 {
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .descMembers { 
+        width: 63%; 
+    }
+
+    .picMember { 
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .descMembers a {
+        width: 10%; 
+    }
+
+    .headerText { 
+        margin-bottom: 1em; 
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .descMembers a {
+        margin-right: 5%;
+    }
+
+    .descMembers h2 {
+        font-size: 1.2em;
+    }
+
+    .descMembers p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .descMembers { 
+        width: 100%; 
+    }
+
+    .descMembers a {
+        width: 12%;
+    }
+
+    .picMember { 
+        width: 25%;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .descMembers h2 {
+        font-size: 1.2em; 
+    }
+
+    .descMembers h5 {
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+
+    .descMembers p { 
+        font-size: 0.75em; 
+    }
+
+    .descMembers a {
+        width: 12%; 
+    }
+
+}
+
+@media only screen and (max-width: 368px){
+    .listMembers {
+        width: 100%; 
+    }
+
+    .descMembers h2 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .picMember { 
+        display: none;
+    }
+}
+  

@@ -64,7 +64,7 @@
   background-color :var(--ifm-background-color); 
   background-image: url("../../static/img/backgroundLoop.png");
   background-repeat: no-repeat;
-  background-position: 105% 10em;
+  background-position: 105% 7.5em;
 }
 
 .heroInner {
@@ -78,6 +78,8 @@
   color: #fff;
   font-size: 3em;
   margin: 0;
+  font-weight: 500; 
+  text-transform: capitalize; 
 }
 
 .heroTitleTextHtml { 
@@ -197,28 +199,27 @@
 @media only screen and (max-width: 884px) {
   .hero { 
     display: block; 
+    margin: 0 auto; 
+    padding: 0;
   }
 
   .heroInner { 
     width: 80vw; 
-    margin: 0 auto; 
   }
 
   .heroImage { 
+    margin: 0 auto; 
     width: 100vw; 
-    margin-left: 7em; 
     margin-top: 70px; 
   }
 
   .heroBanner {
-    background-position: 115% 25em;
+    background-position: 115% 17em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .hero {
-    padding-left: 20px;
-    padding-right: 20px;
     width: 100%; 
   }
 
@@ -257,7 +258,6 @@
 
   .heroImage { 
     width: 400px; 
-    margin-left: 20%; 
     margin-top: 50px; 
   }
 }
@@ -280,7 +280,6 @@
 
   .heroImage { 
     width: 75vw; 
-    margin-left: 15%; 
   }
 
   .indexCtas { 
@@ -289,7 +288,7 @@
   }
 
   .heroBanner {
-    background-position: 150% 20em;
+    background-position: 150% 15em;
   }
 
 }
@@ -308,11 +307,6 @@
     /* font-size: 2em;  */
     /* width: 80vw;  */
     margin-left: 5%;
-  }
-
-  .heroImage { 
-    /* width: 75vw;  */
-    margin-left: 15%; 
   }
 
   .indexCtas { 
