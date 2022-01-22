@@ -22,7 +22,7 @@ h3 {
   margin: 0; 
   font-family: var(--ifm-font-family);
   font-size: 1em; 
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .headerText { 
@@ -31,7 +31,7 @@ h3 {
   margin: 7px 0 75px 0;
   font-family: var(--ifm-font-family);
   font-size: 3em; 
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 1050px) {

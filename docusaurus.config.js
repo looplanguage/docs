@@ -92,6 +92,11 @@
               position: "left",
             },
             {
+              to: "/about",
+              label: "About",
+              position: "left",
+            },
+            {
               label: "GitLab",
               href: "https://gitlab.com/looplanguage",
               position: "right",
