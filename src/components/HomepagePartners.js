@@ -31,123 +31,37 @@ import teamviewerNM from "../../static/img/partners/teamviewerNM.png"
 import deltaDM from "../../static/img/partners/delta.png"
 import deltaNM from "../../static/img/partners/deltaNM.png"
 
-
-function amazonPartner() {
-    return (
-        <ThemedImage
-        alt="Amazon Partner Loop Language" 
-          sources={{
-            light: amazonDM,
-            dark: amazonNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
+function generatePartners( lightPic, darkPic, name ){
+  return (
+      <div key={{name}} className={clsx("col col--2")}>
+    <div className={clsx("text--center")}>
+      <ThemedImage 
+      sources={{
+        light: lightPic, 
+        dark: darkPic,
+      }}
+      alt={name} 
+      className={styles.partnerIMG} />{" "}
+    </div>{" "}
+  </div>
+  );
 }
 
-function netflixPartner() {
-    return (
-        <ThemedImage
-        alt="Netflix Partner Loop Language" 
-          sources={{
-            light: netflixDM,
-            dark: netflixNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
+function Partners() { 
+  return [
+    generatePartners(amazonDM, amazonNM, "Amazon Logo"), 
+    generatePartners(netflixDM, netflixNM, "Netflix Logo"), 
+    generatePartners(fontysDM, fontysNM, "Fontys Logo"), 
+    generatePartners(atlassianDM, atlassianNM, "Atlassian Logo"), 
+    generatePartners(teamviewerDM, teamviewerNM, "Teamviewer Logo"), 
+    generatePartners(deltaDM, deltaNM, "Delta Logo"), 
+  ]
 }
 
-function fontysPartner() {
-    return (
-        <ThemedImage
-        alt="Fontys Partner Loop Language" 
-          sources={{
-            light: fontysDM,
-            dark: fontysNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
-}
-
-function atlassianPartner() {
-    return (
-        <ThemedImage
-        alt="Atlassian Partner Loop Language" 
-          sources={{
-            light: atlassianDM,
-            dark: atlassianNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
-}
-
-function teamviewerPartner() {
-    return (
-        <ThemedImage
-        alt="Teamviewer Partner Loop Language" 
-          sources={{
-            light: teamviewerDM,
-            dark: teamviewerNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
-}
-
-function deltaPartner() {
-    return (
-        <ThemedImage
-        alt="Delta Partner Loop Language" 
-          sources={{
-            light: deltaDM,
-            dark: deltaNM,
-          }}
-          className={styles.partnerIMG}>
-            </ThemedImage>
-    )
-}
-
-const PartnersList = [
-    {
-        alt: "Amazon Logo",
-        ThemedImage: amazonPartner, 
-    }, 
-    {
-        alt: "Netflix Logo", 
-        ThemedImage: netflixPartner, 
-    }, 
-    {
-        alt: "Fontys Logo", 
-        ThemedImage: fontysPartner, 
-    }, 
-    {
-        alt: "Atlassian Logo",
-        ThemedImage: atlassianPartner, 
-    }, 
-    {
-        alt: "Teamviewer Logo", 
-        ThemedImage: teamviewerPartner, 
-    }, 
-    {
-        alt: "Delta FHICT Logo", 
-        ThemedImage: deltaPartner, 
-    }
-]; 
-
-function Partners({ ThemedImage, alt }){
-    return (
-        <div className={clsx("col col--2")}>
-      <div className={clsx("text--center")}>
-        <ThemedImage alt={alt} className={styles.partnerIMG} />{" "}
-      </div>{" "}
-    </div>
-    );
-}
 
 export default function HomepagePartners() {
+    var ObtainedPartners = Partners();
+
     return (
         <section>
           <div className={clsx("container")}>
@@ -156,10 +70,9 @@ export default function HomepagePartners() {
               <h1 className={styles.headerText}>loop language</h1>
             </div>
             <div className={clsx("row")}>
+              {" "}              
+              {ObtainedPartners}
               {" "}
-              {PartnersList.map((props, idx) => (
-                <Partners key={idx} {...props} />
-              ))}{" "}
             </div>{" "}
           </div>{" "}
         </section>

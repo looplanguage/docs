@@ -96,6 +96,12 @@
   .heroImage { 
     margin: 0 auto; 
     width: 30vw; 
+    border-radius: 2.3em;
+  }
+
+  .heroImage img { 
+    border-radius: 2.3em;
+    box-shadow: 28px 28px var(--ifm-color-primary); 
   }
   
   .codeIMG { 
@@ -188,6 +194,12 @@
     .heroImage {
       margin-left: 7em; 
       width: 30vw;  
+      border-radius: 1.3em;
+    }
+
+    .heroImage img { 
+      border-radius: 1.3em;
+      box-shadow: 20px 20px var(--ifm-color-primary); 
     }
   
     .heroProjectTagline { 
@@ -277,6 +289,11 @@
       width: 350px; 
       margin-top: 50px; 
     }
+
+    .heroImage img { 
+      border-radius: 1.3em;
+      box-shadow: 20px 20px var(--ifm-color-primary); 
+    }
   }
   
   @media only screen and (max-width: 600px) {
@@ -331,7 +348,10 @@
       /* width: 80vw; */
       padding-left: 12%;
     }
-  
+
+    .heroImage img { 
+      box-shadow: 13px 13px var(--ifm-color-primary); 
+    }
     
   
   }
