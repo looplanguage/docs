@@ -20,224 +20,47 @@ import manonYkema from "./../../static/img/team-members/ManonYkema.png"
 import githubLogoDM from "./../../static/img/githubLogo.png"
 import githubLogoNM from "./../../static/img/githubLogoNM.png"
 
-function KanePetra() { 
-    return (
-        <li className={styles.listMembers}>
-            <img src={kanePetra} alt="Profiel foto Kane Petra" className={styles.picMember} />
-            <div className={styles.descMembers}>
-                <div className={styles.headerMembers}>
-            <a href="https://github.com/kanersps" target="_blank">  
-                <ThemedImage alt="Github Logo"
-                sources={{
-                  light: githubLogoDM,
-                  dark: githubLogoNM,
-                }}
-                ></ThemedImage>
-            </a>
-            <h2>Kane Petra</h2>
-            <h5>Software Engineer + Infrastructure</h5>
-            </div>
-            <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-            </div>
-            </li>
-    )
-}
-
-function WouterPennings() { 
+function GeneratePerson(img, name, github, focus, description) {
   return (
-      <li className={styles.listMembers}>
-          <img src={wouterPennings} alt="Profiel foto Wouter Pennings" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/WouterPennings" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
+    <li className={styles.listMembers}>
+      <img src={img} alt="Profiel foto Manon Ykema" className={styles.picMember} />
+      <div className={styles.descMembers}>
+        <div className={styles.headerMembers}>
+          <a href={github} target="_blank">  
+            <ThemedImage alt="Github Logo"
+            sources={{
+              light: githubLogoDM,
+              dark: githubLogoNM,
+            }}
+            ></ThemedImage>
           </a>
-          <h2>Wouter Pennings</h2>
-          <h5>Software Engineer</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
+          <h2>{name}</h2>
+          <h5>{focus}</h5>
+        </div>
+        <p>{description}</p>
+      </div>
+    </li>
   )
 }
 
-function NealGeilen() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={nealGeilen} alt="Profiel foto Neal Geilen" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/NealGeilen" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Neal Geilen</h2>
-          <h5>Software Engineer</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
+function TeamMembers(){
+  let description = "Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.";
 
-function NickvOoijen() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={nickvOoijen} alt="Profiel foto Nick van Ooijen" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/nickonos" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Nick van Ooijen</h2>
-          <h5>Software Engineer</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
-
-function DamienKusters() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={damienKusters} alt="Profiel foto Damien Kusters" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/DamienKusters" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Damien Kusters</h2>
-          <h5>Software Engineer</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
-
-function JessevdLaar() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={jessevdLaar} alt="Profiel foto Jesse van de Laar" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/Jesse2001" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Jesse van de Laar</h2>
-          <h5>Software Engineer</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
-
-function SefvHalbeek() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={sefvHalbeek} alt="Profiel foto Sef van Halbeek" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/SEFFFFF" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Sef van Halbeek</h2>
-          <h5>Brand design</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
-
-function ManonYkema() { 
-  return (
-      <li className={styles.listMembers}>
-          <img src={manonYkema} alt="Profiel foto Manon Ykema" className={styles.picMember} />
-          <div className={styles.descMembers}>
-              <div className={styles.headerMembers}>
-          <a href="https://github.com/manontheresa" target="_blank">  
-              <ThemedImage alt="Github Logo"
-              sources={{
-                light: githubLogoDM,
-                dark: githubLogoNM,
-              }}
-              ></ThemedImage>
-          </a>
-          <h2>Manon Ykema</h2>
-          <h5>Front-end design + development</h5>
-          </div>
-          <p>Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-          </div>
-          </li>
-  )
-}
-
-const TeamMemberList = [
-    {
-        NodeList: KanePetra, 
-    },
-    {
-        NodeList: WouterPennings, 
-    },
-    {
-      NodeList: NealGeilen, 
-    },
-    {
-      NodeList: NickvOoijen, 
-    },
-    {
-      NodeList: DamienKusters, 
-    },
-    {
-      NodeList: JessevdLaar, 
-    },
-    {
-      NodeList: SefvHalbeek, 
-    },
-    {
-      NodeList: ManonYkema, 
-    },
-]
-
-function TeamMembers({ NodeList }){
-    return (
-        <NodeList /> 
-    );
+  return [ 
+    GeneratePerson(kanePetra, "Kane", "https://github.com/kanersps", "Software Engineer + Infrastructure", description),
+    GeneratePerson(wouterPennings, "Wouter", "https://github.com/wouterpennings", "Software Engineer", description),
+    GeneratePerson(nickvOoijen, "Nick", "https://github.com/nickonos", "Software Engineer", description), 
+    GeneratePerson(nealGeilen, "Neal", "https://github.com/NealGeilen", "Software Engineer", description), 
+    GeneratePerson(damienKusters, "Damien", "https://github.com/DamienKusters", "Software Engineer", description), 
+    GeneratePerson(sefvHalbeek, "Sef", "https://github.com/SEFFFFF", "Brand design", description),
+    GeneratePerson(jessevdLaar,"Jesse", "https://github.com/Jesse2001", "Software Engineer", description),
+    GeneratePerson(manonYkema, "Manon", "https://github.com/manontheresa", "Front-end design + development", description), 
+  ];
 }
 
 export default function AboutpageTeamMembers() {
+    var members = TeamMembers();
+
     return (
         <section>
           <div className={clsx("container")}>
@@ -247,11 +70,11 @@ export default function AboutpageTeamMembers() {
             </div>
             <ul>
               {" "}
-              {TeamMemberList.map((props, idx) => (
-                <TeamMembers key={idx} {...props} />
+              {members.map((element) => (
+                element
               ))}{" "}
             </ul>
           </div>{" "}
         </section>
-      );
+    );
 }
