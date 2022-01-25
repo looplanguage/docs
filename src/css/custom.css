@@ -46,6 +46,7 @@
 html[data-theme='dark'] {
   --ifm-navbar-background-color: #000000; 
   --ifm-color-black: #fff; 
+  --ifm-color-white: #18191A; 
   --ifm-background-color: #18191A; 
   --ifm-dropshadow-color: #161616; 
 }

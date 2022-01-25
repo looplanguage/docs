@@ -61,13 +61,13 @@ function TeamMembers(){
   let description = "Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.";
 
   return [ 
-    GeneratePerson(kanePetra, "Profiel foto Kane Petra", "Kane", "Software Engineer + Infrastructure", description, styles.yes, "https://github.com/kanersps", styles.no),
-    GeneratePerson(wouterPennings, "Profiel foto Wouter Pennings", "Wouter", "Software Engineer", description, styles.yes, "https://github.com/wouterpennings", styles.no),
-    GeneratePerson(nickvOoijen, "Profiel foto Nick van Ooijen", "Nick", "Package Repository Developer", description, styles.yes, "https://github.com/nickonos", styles.no), 
-    GeneratePerson(nealGeilen, "Profiel foto Neal Geilen", "Neal", "Software Engineer", description, styles.yes, "https://github.com/NealGeilen", styles.no), 
+    GeneratePerson(kanePetra, "Profiel foto Kane Petra", "Kane", "Software Engineer + Infrastructure", description, styles.yes, "https://github.com/kanersps", styles.no, " "),
+    GeneratePerson(wouterPennings, "Profiel foto Wouter Pennings", "Wouter", "Software Engineer", description, styles.yes, "https://github.com/wouterpennings", styles.no, " "),
+    GeneratePerson(nickvOoijen, "Profiel foto Nick van Ooijen", "Nick", "Package Repository Developer", description, styles.yes, "https://github.com/nickonos", styles.no, " "), 
+    GeneratePerson(nealGeilen, "Profiel foto Neal Geilen", "Neal", "Software Engineer", description, styles.yes, "https://github.com/NealGeilen", styles.no, " "), 
     GeneratePerson(damienKusters, "Profiel foto Damien Kusters", "Damien", "Package Repository Developer", "Assisted in the LPR Backend architecture design. Developed the Authentication and authorisation capabilities of the Package Repository", styles.yes, "https://github.com/DamienKusters", styles.yes, "https://www.linkedin.com/in/damien-kusters-7baa33197/"), 
-    GeneratePerson(sefvHalbeek, "Profiel foto Sef van Halbeek", "Sef", "Brand design", description, styles.yes, "https://github.com/SEFFFFF", styles.no),
-    GeneratePerson(jessevdLaar, "Profiel foto Jesse van de Laar","Jesse", "Software Engineer", description, styles.yes, "https://github.com/Jesse2001", styles.no),
+    GeneratePerson(sefvHalbeek, "Profiel foto Sef van Halbeek", "Sef", "Brand design", description, styles.yes, "https://github.com/SEFFFFF", styles.no, " "),
+    GeneratePerson(jessevdLaar, "Profiel foto Jesse van de Laar","Jesse", "Software Engineer", description, styles.yes, "https://github.com/Jesse2001", styles.no, " "),
     GeneratePerson(manonYkema, "Profiel foto Manon Ykema", "Manon", "Front-end design + development", "Designed and developed the Welcome and Documentation page.", styles.yes, "https://github.com/manontheresa", styles.yes, "https://www.linkedin.com/in/manon-ykema-1708/"), 
   ];
 }
