@@ -8,7 +8,7 @@
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    favicon: "./static/img/favicon.ico",
     organizationName: "looplanguage", // Usually your GitHub org/user name.
     projectName: "looplanguage.github.io", // Usually your repo name.
     presets: [
@@ -75,8 +75,8 @@
           title: " ",
           logo: {
             alt: "Loop Logo",
-            src: "img/loopLogoBlack.png",
-            srcDark: "img/loopLogoWhite.png",
+            src: "img/loopLogoBlack.svg",
+            srcDark: "img/loopLogoWhite.svg",
           },
           items: [
             {
@@ -107,7 +107,7 @@
           ],
         },
         footer: {
-          style: "dark",
+          style: "light",
           links: [
             {
               title: "Docs",

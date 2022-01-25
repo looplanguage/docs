@@ -51,10 +51,11 @@
 
 .headerMembers { 
     width: 100%; 
+    display: flow-root;
 }
 
-.headerMembers a { 
-    width: 10%;
+.socialMedia a { 
+    width: 7%;
     float: left; 
     margin-right: 4%; 
     margin-top: 1%;
@@ -78,6 +79,16 @@
     width: 100%; 
     margin-bottom: 3%; 
 }
+
+.yes { 
+    opacity: 1; 
+}
+
+.no {
+    display: none; 
+}
+
+
 
   @media only screen and (max-width: 1050px) {
 
