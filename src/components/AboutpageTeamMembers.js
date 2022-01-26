@@ -15,12 +15,53 @@ import sefvHalbeek from "./../../static/img/team-members/SefvHalbeek.png"
 import manonYkema from "./../../static/img/team-members/ManonYkema.png"
 
 // Social Media
-import githubLogoDM from "./../../static/img/githubLogo.png"
-import githubLogoNM from "./../../static/img/githubLogoNM.png"
-import linkedinLogoDM from "./../../static/img/linkedinLogoDM.png"
-import linkedinLogoNM from "./../../static/img/linkedinLogoNM.png"
+import githubLogoDM from "./../../static/img/social-media/githubLogo.png"
+import githubLogoNM from "./../../static/img/social-media/githubLogoNM.png"
+import linkedinLogoDM from "./../../static/img/social-media/linkedinLogoDM.png"
+import linkedinLogoNM from "./../../static/img/social-media/linkedinLogoNM.png"
+import twitterLogoDM from "./../../static/img/social-media/twitterLogoDM.png"
+import twitterLogoNM from "./../../static/img/social-media/twitterLogoNM.png"
+import portfolioLogoDM from "./../../static/img/social-media/portfolioLogoDM.png"
+import portfolioLogoNM from "./../../static/img/social-media/portfolioLogoNM.png"
 
-function GeneratePerson(img, namePic, name, focus, description, displayGithub, githubLink, displayLinkedin, linkedinLink) {
+// Switch Case Numbers
+const githubInfo = 0
+const linkedinInfo = 1
+const twitterInfo = 2
+const portfolioInfo = 3
+
+class SMInfo{
+  constructor(imageLight, imageDark, alt){
+    this.imageLight = imageLight
+    this.imageDark = imageDark
+    this.alt = alt
+  }
+}
+
+class SocialMediaLink{
+  constructor(url, infoId){
+    this.url = url
+    let info = this.GetInfo(infoId)
+    this.imageLight = info.imageLight
+    this.imageDark = info.imageDark
+    this.alt = info.alt
+  }
+
+  GetInfo(infoId){
+    switch(infoId){
+      case githubInfo:
+        return new SMInfo(githubLogoDM, githubLogoNM, "GitHub Social Media Icon")
+      case linkedinInfo:
+        return new SMInfo(linkedinLogoDM, linkedinLogoNM, "LinkedIn Social Media Icon")
+      case twitterInfo: 
+        return new SMInfo(twitterLogoDM, twitterLogoNM, "Twitter Social Media Icon")
+      case portfolioInfo: 
+        return new SMInfo(portfolioLogoDM, portfolioLogoNM, "Portfolio Icon")
+    }
+  }
+}
+
+function GeneratePerson(img, namePic, name, focus, description, socialMediaLinks) {
    
   return (
     <li key={namePic}className={styles.listMembers}>
@@ -32,43 +73,35 @@ function GeneratePerson(img, namePic, name, focus, description, displayGithub, g
         </div>
         <p>{description}</p>
         <div className={styles.socialMedia}>
-        <a className={displayGithub} href={githubLink} target="_blank" >  
-            <ThemedImage alt="Github Logo"
+        
+        {socialMediaLinks.map(socialMediaLink=>(
+          <a href={socialMediaLink.url} target="_blank" >  
+            <ThemedImage alt={socialMediaLink.alt}
             sources={{
-              light: githubLogoDM,
-              dark: githubLogoNM,
-            }}
-            ></ThemedImage>
-          </a>        
-          <a className={displayLinkedin} href={linkedinLink} target="_blank" >  
-            <ThemedImage alt="LinkedIn Logo"
-            sources={{
-              light: linkedinLogoDM,
-              dark: linkedinLogoNM,
+              light: socialMediaLink.imageLight,
+              dark: socialMediaLink.imageDark,
             }}
             ></ThemedImage>
           </a>   
+        ))}
         </div>
       </div>
     </li>
   )
 }
 
-// To *NOT SHOW* a social media channel set the display[MEDIA] to styles.no, " "
-// To *SHOW* a social media channel, set the display[MEDIA] to styles.yes, "[LINK]"
-
 function TeamMembers(){
   let description = "Testimonials. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.";
 
   return [ 
-    GeneratePerson(kanePetra, "Profiel foto Kane Petra", "Kane", "Software Engineer + Infrastructure", description, styles.yes, "https://github.com/kanersps", styles.no, " "),
-    GeneratePerson(wouterPennings, "Profiel foto Wouter Pennings", "Wouter", "Software Engineer", description, styles.yes, "https://github.com/wouterpennings", styles.no, " "),
-    GeneratePerson(nickvOoijen, "Profiel foto Nick van Ooijen", "Nick", "Package Repository Developer", description, styles.yes, "https://github.com/nickonos", styles.no, " "), 
-    GeneratePerson(nealGeilen, "Profiel foto Neal Geilen", "Neal", "Software Engineer", description, styles.yes, "https://github.com/NealGeilen", styles.no, " "), 
-    GeneratePerson(damienKusters, "Profiel foto Damien Kusters", "Damien", "Package Repository Developer", "Assisted in the LPR Backend architecture design. Developed the Authentication and authorisation capabilities of the Package Repository", styles.yes, "https://github.com/DamienKusters", styles.yes, "https://www.linkedin.com/in/damien-kusters-7baa33197/"), 
-    GeneratePerson(sefvHalbeek, "Profiel foto Sef van Halbeek", "Sef", "Brand design", description, styles.yes, "https://github.com/SEFFFFF", styles.no, " "),
-    GeneratePerson(jessevdLaar, "Profiel foto Jesse van de Laar","Jesse", "Software Engineer", description, styles.yes, "https://github.com/Jesse2001", styles.no, " "),
-    GeneratePerson(manonYkema, "Profiel foto Manon Ykema", "Manon", "Front-end design + development", "Designed and developed the Welcome and Documentation page.", styles.yes, "https://github.com/manontheresa", styles.yes, "https://www.linkedin.com/in/manon-ykema-1708/"), 
+    GeneratePerson(kanePetra, "Profiel foto Kane Petra", "Kane", "Lead Maintainer", "Responsible for the main Loop repositories, its official libraries and final decisions within the project.", [new SocialMediaLink("https://github.com/kanersps", githubInfo), new SocialMediaLink("https://www.linkedin.com/in/kane-petra-a05bb8158/", linkedinInfo), new SocialMediaLink("https://twitter.com/Kanersps", twitterInfo)]),//
+    GeneratePerson(wouterPennings, "Profiel foto Wouter Pennings", "Wouter", "Maintaining + developing Loop", "I am a maintainer for the project. Developing Loop and supporting its sub-projects.", [new SocialMediaLink("https://github.com/wouterpennings", githubInfo), new SocialMediaLink("https://www.linkedin.com/in/wouter-pennings-6808211b5/", linkedinInfo), new SocialMediaLink("https://www.wouterpennings.com/", portfolioInfo)]),
+    GeneratePerson(nickvOoijen, "Profiel foto Nick van Ooijen", "Nick", "Package Repository Developer", description, [new SocialMediaLink("https://github.com/nickonos", githubInfo)]), 
+    GeneratePerson(nealGeilen, "Profiel foto Neal Geilen", "Neal", "Software Engineer", description, [new SocialMediaLink("https://github.com/NealGeilen", githubInfo)]), 
+    GeneratePerson(damienKusters, "Profiel foto Damien Kusters", "Damien", "Package Repository Developer", "Assisted in the LPR Backend architecture design. Developed the Authentication and authorisation capabilities of the Package Repository", [new SocialMediaLink("https://github.com/DamienKusters", githubInfo), new SocialMediaLink("https://www.linkedin.com/in/damien-kusters-7baa33197/", linkedinInfo)]), 
+    GeneratePerson(sefvHalbeek, "Profiel foto Sef van Halbeek", "Sef", "Brand design", description, [new SocialMediaLink("https://github.com/SEFFFFF", githubInfo)]),
+    GeneratePerson(jessevdLaar, "Profiel foto Jesse van de Laar","Jesse", "Software Engineer", description, [new SocialMediaLink("https://github.com/Jesse2001", githubInfo)]),
+    GeneratePerson(manonYkema, "Profiel foto Manon Ykema", "Manon", "Front-end", "Designed and developed the Welcome and Documentation page.", [new SocialMediaLink("https://github.com/manontheresa", githubInfo), new SocialMediaLink("https://www.linkedin.com/in/manon-ykema-1708/", linkedinInfo), new SocialMediaLink("https://www.manontheresa.com/", portfolioInfo)] ),
   ];
 }
 
