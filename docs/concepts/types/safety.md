@@ -3,6 +3,12 @@ title: Type Safety
 sidebar_position: 0
 ---
 
+:::caution
+
+Loop is not type-safe yet
+
+:::
+
 A type specifies a collection of values that have similar traits. 
 Type safety makes sure that, when you have a variable of a specific type, you cannot assign a different value of a 
 different type to the [variable](../variables). Type safety in a language is important, because it means that you have predictable and defined behaviour.
