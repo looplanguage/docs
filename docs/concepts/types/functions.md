@@ -42,3 +42,50 @@ var closure = fn(x) {
 var outer = closure(100) // Returns a function reference
 outer(10) // Returns 1000
 ```
+
+## Built-in Funtions
+
+In the Loop interpreter are native functions that are built-in, you do not need any packages to use these.
+
+### print
+
+Prints the value of the expresion that is passed as argument.
+
+```loop
+print("Hello, world")       // Prints: "Hello, world" in the terminal
+
+print("Hello, ", "world")  // Prints: "Hello, world" in the terminal
+```
+
+### println
+
+Does exactly the same as the `print()` function, but with a "new-line" at the end.
+
+```loop
+println("Hello, world")       // Prints: "Hello, world" in the terminal with a new-line
+```
+
+### len
+
+The `len()` functions returns the number of elements in an array or the number of characters in a string.
+
+```loop
+var length = len("Loop")           // Variable "length" has the value: 4
+
+var length = len([1, 2, 3, 4, 5])  // Variable "length" has the value: 5 
+```
+
+### format
+
+The `format()` functions replaces '%a' in a string with a expression that you passed as an argument. Below you wil find an example:
+
+```loop
+var result = format("Name: %a", "Raj")  // result will have a string with the value: "Name: Raj"
+```
+
+You can also do this with multiple '%a':
+
+```loop
+var result = format("Name: %a, Age: %a", "Raj", 14)  
+// result will have a string with the value: "Name: Raj, Age: 14"
+```
