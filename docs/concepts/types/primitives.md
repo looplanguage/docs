@@ -22,7 +22,7 @@ var integer = -200; // Negative integer
 
 ```loop
 // Returns 123 to string
-123.to_string();
+123.to_string()
 ```
 
 ## Booleans
@@ -30,8 +30,22 @@ var integer = -200; // Negative integer
 A boolean is a primitive value that can either be true or false. You can define a boolean like this:
 
 ```loop
-var boolean = true;
-var boolean = false;
+var boolean = true
+var boolean = false
+```
+
+### Methods
+
+#### Convert to integer
+
+This method will cause an exception if the string is unable to be converted.
+ - true = 1
+ - false = 0
+
+```loop
+// Converts the boolean true to 1
+var boolean = true
+boolean.to_int()
 ```
 
 ## Strings
@@ -39,19 +53,19 @@ var boolean = false;
 A string is a sequence of characters inside `"`'s. You can define a string like this:
 
 ```loop
-var string = "hello"; // A single word
-var string = "hello world"; // Multiple words
+var string = "hello"       // A single word
+var string = "hello world" // Multiple words
 ```
 
-#### Methods
+### Methods
 
-##### Convert to integer
+#### Convert to integer
 
 This method will cause an exception if the string is unable to be converted.
 
 ```loop
 // Converts the string "123" to integer
-"123".to_int();
+"123".to_int()
 ```
 
 ## Null
@@ -59,20 +73,20 @@ This method will cause an exception if the string is unable to be converted.
 Loop only has one primitive indicating the absence of a value. Which is "null", a Null value indicates "not a value". You can define something to be null like this:
 
 ```loop
-var has_nothing = null;
+var has_nothing = null
 ```
 
 The Null primitive will result in "false", for example.
 
 ```loop
-var has_nothing = null;
+var has_nothing = null
 
 if (has_nothing) {
   // Will not print
-  print("Hi!")
+  println("Hi!")
 } else {
   // This will print
-  print("Bye!")
+  println("Bye!")
 }
 ```
 
@@ -81,20 +95,20 @@ if (has_nothing) {
 An array is a list of values. They can either be of the same type, or multiple types. The elements themselves can be of any type. An array with only single types can look like this:
 
 ```loop
-var array = [100, 50, 300];
-var array = ["hello", "world", "!"];
+var array = [100, 50, 300]
+var array = ["hello", "world", "!"]
 ```
 
 However like said previously, they're not limited to a single type. Here you can see a mix of elements (which is considered valid):
 
 ```loop
-var array = [100, "hello", 50, "world", 300, "!"];
+var array = [100, "hello", 50, "world", 300, "!"]
 ```
 
 Or even arrays in arrays:
 
 ```loop
-var array = [[100], ["hello"]];
+var array = [[100], ["hello"]]
 ```
 
 ### Accessing Arrays
@@ -102,14 +116,14 @@ var array = [[100], ["hello"]];
 Accessing an array is simple. You use the index operators (square brackets []). Let's take the previous example and use it here to access the "100" value in the sub array.
 
 ```loop
-var array = [[100], ["hello"]];
+var array = [[100], ["hello"]]
 var value = array[0][0] // sets the value of "value" to 100
 ```
 
 Or a simpler array:
 
 ```loop
-var array = [100, 200, 300];
+var array = [100, 200, 300]
 var value = array[1] // sets the value of "value" to 200
 ```
 
