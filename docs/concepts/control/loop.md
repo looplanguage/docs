@@ -3,12 +3,6 @@ title: Loops
 sidebar_position: 300
 ---
 
-:::caution
-
-Not all features mentioned here are implemented
-
-:::
-
 ## For Loop
 
 The For-loop allows to repeat the code written in its block, to be repeated
@@ -37,7 +31,7 @@ Then everythin repeats itself, until "n" is greater or the same as 100.
 
 ```loop
 // This will loop from 1 (including) to 100 (excluding)
-for (var n from 1 to 100) {
+for (var n = 1 to 100) {
     // Code
 }
 ```
@@ -68,9 +62,15 @@ for (true) {
 
 The first example is very simple, the for-loop will execute the code-block forever because the condition is "true". But because the only statement in the code-block is "break", it will immediately break at the first iteration.
 
+:::caution
+
+Feature is not implemented yet
+
+:::
+
 ```loop
 // Break with a value
-var result = for (var i from 1 to 100) {
+var result = for (var i = 1 to 100) {
     if (i == 10) {
         // Breaks and return the value of 'i'
         break i
