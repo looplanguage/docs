@@ -86,7 +86,7 @@
               label: "Docs",
             },
             {
-              href: "https://downloads.looplang.org",
+              to: "https://downloads.looplang.org",
               position: "left",
               label: "Downloads",
             },
@@ -140,6 +140,10 @@
                 {
                   label: "Contributor Guidelines",
                   to: "/contributor_guidelines",
+                },
+                {
+                  label: "Development Guidelines",
+                  href: "https://gitlab.com/looplanguage/loop/-/wikis/Loop-Language-Development-Guidelines"
                 },
               ],
             },
