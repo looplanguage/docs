@@ -5,6 +5,7 @@ sidebar_position: 300
 
 ## For Loop
 
+
 The For-loop allows to repeat the code written in its block, to be repeated
 until the condition evaluates to: "true" or "truthy".
 
@@ -18,9 +19,16 @@ for (true) {
 for ("hello") {
     // Code
 }
+
+// You can also do loops without the parenthesis
+for "hello" {
+    // Code
+}
 ```
 
 The first for-loop it will repeat forever, because the condition is "true". The same goes for the second for-loop, "hello" will evaluate to "truthy", and thus ewill loop forever.
+
+You can write a loop with **and** without the parenthesis around it. In the documentation we use without as the default and we encourage you the user to do the same.
 
 ### Examples:
 
@@ -31,7 +39,7 @@ Then everythin repeats itself, until "n" is greater or the same as 100.
 
 ```loop
 // This will loop from 1 (including) to 100 (excluding)
-for (var n = 1 to 100) {
+for var n = 1 to 100 {
     // Code
 }
 ```
@@ -41,7 +49,7 @@ In this example, the for-loop loops through the array. In this case you have a v
 ```loop
 // Loop through the array
 var array = [1, 10, 4]
-for (var value in array) {
+for var value in array {
     // Code
 }
 ```
@@ -55,7 +63,7 @@ Examples given below:
 
 ```loop
 // Break without returning a value
-for (true) {
+for true {
     break
 }
 ```
@@ -71,7 +79,7 @@ Feature is not implemented yet
 ```loop
 // Break with a value
 var result = for (var i = 1 to 100) {
-    if (i == 10) {
+    if i == 10 {
         // Breaks and return the value of 'i'
         break i
     }
