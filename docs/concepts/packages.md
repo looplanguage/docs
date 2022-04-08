@@ -9,7 +9,7 @@ A package is a single Loop file which exports values. Generally public packages 
 
 ```loop
 // filename: test_package.loop
-var double = fn(x) {
+double := fn(x) {
   return x * 2
 }
 

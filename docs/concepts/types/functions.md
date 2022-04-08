@@ -8,7 +8,7 @@ sidebar_position: 200
 Declaring functions in Loop is easy, you just use the `fun` keyword accompanied by it's arguments and function body. For example:
 
 ```loop
-fn(one, two, three) {
+fn(int one, int two, int three) {
   // Body
 }
 ```
@@ -17,12 +17,22 @@ If you'd like to call a function again (which is it's primary use-case of course
 
 ```loop
 // Notice the "var fn ="
-var adder = fn(one, two, three) {
+adder := fn(int one, int two, int three) {
   return one + two + three
 }
 
 // Now you can call the function like this:
 adder(1, 2, 3) // Returns 6
+```
+
+The functions given as examples above are lambda's or anonymous functions. In Loop there are also named functions, they are like this:
+
+```loop
+fn double(int i) {
+  return i * 2
+}
+
+double(5)
 ```
 
 ## Closures
@@ -32,9 +42,9 @@ adder(1, 2, 3) // Returns 6
 Because functions are considered first-class in Loop it means they can also contain their own environment. Creating a function automatically creates an environment for that function. Take this as an example:
 
 ```loop
-var closure = fn(x) {
-  var num = x
-  return fun(y) {
+closure := fn(int x) {
+  num := x
+  return fun(int y) {
     return x * y
   }
 }

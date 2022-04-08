@@ -48,7 +48,7 @@ In this example, the for-loop loops through the array. In this case you have a v
 
 ```loop
 // Loop through the array
-var array = [1, 10, 4]
+array := [1, 10, 4]
 for var value in array {
     // Code
 }
@@ -78,7 +78,7 @@ Feature is not implemented yet
 
 ```loop
 // Break with a value
-var result = for (var i = 1 to 100) {
+result := for var i = 1 to 100 {
     if i == 10 {
         // Breaks and return the value of 'i'
         break i

@@ -30,11 +30,11 @@ Scopes are not limited to a single depth, so you can nest them as deep as you'd 
 
 ```loop
 // root
-var func = fn() {
+func := fn() {
   // Level 1 (deeper scope because an function-expression)
   {
     // Level 2 (deeper scope, implicitly defined)
-    if(true) {
+    if true {
       // Level 3 (deeper scope because an if-expression)
     }
   }
@@ -47,15 +47,15 @@ The best way to illustrate this is with an example. We will be using the last co
 
 ```loop
 // A new variable, accessable everywhere in our application
-var global = 100;
-var func = fn() {
+global := 100;
+func := fn() {
   // Will print 100
   print(global)
 
   // A new variable, accessable only to this scope
-  var scoped_a = 300;
+  scoped_a := 300;
   {
-    if(true) {
+    if true {
       // Will print 300
       print(scoped_a)
     }

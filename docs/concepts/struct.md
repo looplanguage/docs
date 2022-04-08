@@ -3,6 +3,12 @@ title: Struct
 sidebar_position: 500
 ---
 
+:::caution
+
+Not all features mentioned here are implemented, and the spec might change
+
+:::
+
 A struct is simply a structure of data. It's used to accompany values and associated methods.
 
 ## Basics
@@ -21,7 +27,9 @@ Now it's possible to create an instance of this struct by calling it like a func
 
 ```loop
 // Creates an empty Person with the default values
-var john = Person()
+john := Person()
+// or
+Person john2 := Person()
 ```
 
 A struct is type safe and it's values can never be null. By default the values are set to their most basic variant.
@@ -38,10 +46,10 @@ It's also possible to specify values to "construct" a class with. We're using th
 
 ```loop
 // Notice the curly braces initializing the values
-var jane = Person({ name: "Jane", age: 52, email: "jane@example.org" })
+jane := Person({ name: "Jane", age: 52, email: "jane@example.org" })
 
 // It's also possible to initialize some values (no age, so that will be 0 by default)
-var jane = Person({ name: "Jane", email: "jane@example.org" })
+jane := Person({ name: "Jane", email: "jane@example.org" })
 ```
 
 Besides this you can also specify a constructor method in your struct if you prefer different default values, or to do logic on inputs.
@@ -65,7 +73,7 @@ struct Person {
 
 // Notice that curly braces are still allowed
 // This also prints "Hi Jane!"
-var jane = Person({ name: "Jane", email: "jane@example.org" });
+jane := Person({ name: "Jane", email: "jane@example.org" });
 ```
 
 If you create a constructor with parameters, it's no longer possible to pass a hashmap as argument to initialize the struct. You then have to follow the constructors parameters.
@@ -86,7 +94,7 @@ struct Person {
 }
 
 // Notice there are no curly brackets
-var jane = Person("Jane")
+jane := Person("Jane")
 ```
 
 ## Methods
@@ -114,7 +122,7 @@ To call this method you first need to instantiate a new variant of the struct an
 
 ```loop
 // New instance of Person with the name "Sam"
-var sam = Person({ name: "Sam" })
+sam := Person({ name: "Sam" })
 
 // Prints "Hello Sam!"
 sam.greet();
@@ -149,22 +157,22 @@ struct Person {
   }
 }
 
-var ash = Person({ name: "Ash", age: 63 });
+ash := Person({ name: "Ash", age: 63 });
 
 // Ages Ash up to 64, retired will equal to false
-var retired = ash.ageUp();
+retired := ash.ageUp();
 
 // Ages Ash up to 65, retired will equal to true
 // And "Congratulations on your retirement, Ash!" will be printed
-var retired = ash.ageUp();
+retired := ash.ageUp();
 
 
 // Ages Ash up to 66, retired will equal to true
 // Nothing will be printed
-var retired = ash.ageUp();
+retired := ash.ageUp();
 
 // ashAge will equal to 66
-var ashAge = ash.age
+ashAge := ash.age
 ```
 
 ### With Parameters

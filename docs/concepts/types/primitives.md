@@ -5,15 +5,35 @@ sidebar_position: 100
 
 # Primitives
 
-Listed below are all the different types that Loop has out of the box. All the types have an explanations and some examples.
+Listed below are all the different types that Loop has out of the box. A quick overview:
+
+| Type            | Syntax      |
+| -----------     | ----------- |
+| Integer (64bit) | `int`       |
+| Float (64bit)   | `float`     |
+| String          | `string`    |
+| Boolean         | `bool`      |
+
+if you want to define an array just add `[]` to the type. Just like this:
+```
+int[] array := [1, 2, 3, 4, 5]
+```
+
+All the types have an explanations and some examples.
 
 ## Integer
 
 An integer is a primitive value that can be up to 64bits in length. You can define an integer like this:
 
 ```loop
-var integer = 10; // Positive integer
-var integer = -200; // Negative integer
+integer := 10 // Positive integer
+integer := -200 // Negative integer
+```
+
+Or you can staticly type it like this:
+
+```loop
+int i := 10
 ```
 
 ### Methods
@@ -30,8 +50,14 @@ var integer = -200; // Negative integer
 A boolean is a primitive value that can either be true or false. You can define a boolean like this:
 
 ```loop
-var boolean = true
-var boolean = false
+boolean := true
+boolean := false
+```
+
+And just like integers:
+
+```loop
+bool boolean := true
 ```
 
 ### Methods
@@ -53,8 +79,8 @@ boolean.to_int()
 A string is a sequence of characters inside `"`'s. You can define a string like this:
 
 ```loop
-var string = "hello"       // A single word
-var string = "hello world" // Multiple words
+text := "hello world" // Multiple words
+string text := "Another string!"
 ```
 
 ### Methods
@@ -73,15 +99,15 @@ This method will cause an exception if the string is unable to be converted.
 Loop only has one primitive indicating the absence of a value. Which is "null", a Null value indicates "not a value". You can define something to be null like this:
 
 ```loop
-var has_nothing = null
+has_nothing := null
 ```
 
 The Null primitive will result in "false", for example.
 
 ```loop
-var has_nothing = null
+has_nothing := null
 
-if (has_nothing) {
+if has_nothing {
   // Will not print
   println("Hi!")
 } else {
@@ -95,20 +121,14 @@ if (has_nothing) {
 An array is a list of values. They can either be of the same type, or multiple types. The elements themselves can be of any type. An array with only single types can look like this:
 
 ```loop
-var array = [100, 50, 300]
-var array = ["hello", "world", "!"]
+int[] array := [100, 50, 300]
+array := ["hello", "world", "!"]
 ```
 
-However like said previously, they're not limited to a single type. Here you can see a mix of elements (which is considered valid):
+Or even arrays in arrays, as long as they are the same type:
 
 ```loop
-var array = [100, "hello", 50, "world", 300, "!"]
-```
-
-Or even arrays in arrays:
-
-```loop
-var array = [[100], ["hello"]]
+array := [[100], [999, 10]]
 ```
 
 ### Accessing Arrays
@@ -116,15 +136,15 @@ var array = [[100], ["hello"]]
 Accessing an array is simple. You use the index operators (square brackets []). Let's take the previous example and use it here to access the "100" value in the sub array.
 
 ```loop
-var array = [[100], ["hello"]]
-var value = array[0][0] // sets the value of "value" to 100
+array := [[100], [9999, 10]]
+value := array[0][0] // sets the value of "value" to 100
 ```
 
 Or a simpler array:
 
 ```loop
-var array = [100, 200, 300]
-var value = array[1] // sets the value of "value" to 200
+array := [100, 200, 300]
+value := array[1] // sets the value of "value" to 200
 ```
 
 ### Methods
@@ -133,8 +153,8 @@ var value = array[1] // sets the value of "value" to 200
 
 ```loop
 // Initialize new array
-var x = [0, 1]
-
+int[] x = [0, 1]
+x := [0, 1]        // Does the same as the line above
 // Add 2 to the array
 x.add(2)
 
@@ -151,7 +171,7 @@ x
 #### array.remove(index: Integer)
 
 ```loop
-var x = [0, 1, 2]
+x := [0, 1, 2]
 
 // Removes index 0 from the array
 x.remove(0)
@@ -167,7 +187,7 @@ x
 
 ```loop
 // Initialize array with 3 elements
-var x = [0, 1, 2]
+x := [0, 1, 2]
 
 // Returns 3
 x.length()
@@ -186,7 +206,7 @@ Hashmap keys are required to be unique, they can have spaces as well (if you're 
 Creating a hashmap is easy and might seem familiar if you've used other languages before. An example with a few sample key value pairs is as follows:
 
 ```loop
-var hashmap = {
+hashmap := {
   "key1": "value",
   "key2": "value"
 }

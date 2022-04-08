@@ -37,14 +37,14 @@ without a prompt:
 
 ```loop
 // Variable "test" will contain the value of what the user typed in.
-var test = input("")
+test := input("")
 ```
 
 You can also accept user input with a prompt, for example:
 
 ```loop
 // Variable "test" will contain the value of what the user typed in.
-var test = input("Prompt > ")
+test := input("Prompt > ")
 ```
 
 ### Output
@@ -86,7 +86,7 @@ and concise.
 The most basic feature is assigning an integer to a variable.
 
 ```loop
-var x = 100;
+x := 100;
 ```
 
 It's also possible to assign functions and then call it. Calling a function
@@ -95,7 +95,7 @@ being returned.
 
 ```loop
 // Defines a new function named "func"
-var func = fn() {}
+func := fn() {}
 
 // Calls the function "func", notice the parenthesis
 func()
@@ -111,7 +111,7 @@ function that doubles it's input:
 
 ```loop
 // Defines a new function called double with one parameter named "x"
-var double = fn(x) {
+double := fn(x) {
   // Returns the input "x" multiplied by 2
   return x * 2
 }

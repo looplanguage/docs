@@ -57,7 +57,7 @@ You can write a if-expression with **and** without the parenthesis around it. In
 Lets take a look at a real example:
 
 ```loop
-var foo = 3
+foo := 3
 if foo == 3 {
   println(foo)
 }
@@ -73,10 +73,12 @@ This code will result in the number three being printed in the terminal. That is
 Since conditionals statements in Loop are not statements, but actually expressions, they evaluate to a value. This allows you to do things like this:
 
 ```loop
-var foo = if true {
+foo := if true {
   "true"
 }
 else {
   "false"
 }
 ```
+
+Something important to note, is that this if-expression gets evaluated ones. It will not be evaluated everytimr you use it.

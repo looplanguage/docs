@@ -30,12 +30,12 @@ The keyword "goto" is needed to jump to a label. The syntax is as follows:
 `goto <label>`. When using a label, you need to reference a label.
 
 ```loop
-if(true) {
-    if (true) {
+if true {
+    if true)  {
         // It will jump to the label: "label:"
         goto label:
     }
-    if (true) {
+    if true {
         // This block will never be reached
     }
 }
